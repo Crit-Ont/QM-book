@@ -1,0 +1,37 @@
+---
+  bibliography: ../references.bib
+---
+# Metaphysics of Bell's Theorem {#sec-bell-metaphysics}  
+
+As  discussed in @sec-bells-theorem, Bell's inequalities follow from a number of plausible assumptions that are based on concepts from classical probability theory and relativity theory. If  the experimental evidence gives us strong reason to believe that Bell inequality-violating correlations are features of physical reality, then one or more of these assumptions must be given up. Some of these assumptions are metaphysical.  As may be expected, the conclusions of experiments with metaphysical consequences are subject to controversy. 
+
+Let us accept, for the moment, that the experimental evidence show that Bell-inequality violating correlations are a feature of the Real Sphere when the experiments are conducted at spacelike separation and under the most stringent of conditions. Acceptance of the reality of such correlations requires rejection of the assumptions that entail a Bell inequality. The analysis of the assumptions of the proof outlined in section 3 affords a taxonomy of positions that one might adopt in light of their experimental violation, as at least one of the assumptions must be rejected. The distinctive assumption is the Principle of Local Causality, @sec-bells-theorem, which, when applied to the setup of CSCH experiments, is equivalent to the Bell Locality condition. This condition can be maintained only if one of the supplementary assumptions is rejected. 
+
+### 8.1 Rejecting the experimental assumptions {#OptiLeftOpenExpeViolBellIneq}  
+
+The implications of Bell inequality violations being a feature of Real Sphere leaves  two options:  
+
+-   *Reject unique outcomes*. This is the option taken by Everettian, or  Many-Worlds theories, and related interpretations of quantum     mechanics. 
+
+-   *Reject the measurement independence assumption.* There are     essentially two ways to do this: 
+-- Suppose a common cause in     the past that determines both experimental settings and experimental     outcomes. 
+-- Reject the usual assumption that causes must temporally precede their effects. This inversion of causality is called *retrocausality*.
+
+#### 8.1.1 Retrocausality  
+
+A retrocausal interpretation would mean that experimental settings on each sub-system of the CSHC experiment retroactively effect the state of the pair of particles at the source, which in turns has an effect on the outcome on the other wing. Retrocausality forms part of the Transactional Interpretation of quantum mechanics in the form developed by Cramer (@Cramer1986, @Cramer1988 and @Cramer2016) but is an error to call the transactional theory developed in @kastner2022transactional retrocausal. Kastner's theory is atemporal. However, the atemporality of Kastner's interpretation may explain Bell-inequality violating correlations. In Kastner's interpretation pre-spacetime processes are invoked that are not spacetime events, but rather possibilities described by state space. 
+
+#### 8.1.2 Superdeterminism  
+
+At the end of @Bell1976, in which an exposition of a Bell-type theorem is presented, there is a remark, interpreted by @MyrvoldGenoveseShimony2020, regarding the experimental settings as independence from the initial total entangled system state $z$.  This may be the case if only QM preparation of the system is being considered but in a laboratory setting, the experimenter is also free to choose the settings of the instruments.  The remark is as follows:
+
+> It has been assumed that the settings of instruments are in some sense  free variables — say at the whim of the experimenters — or in any case  not determined in the overlap of the backward lightcones. Indeed 
+without such freedom I would not know how to formulate *any* idea of  local causality, even the modest human one (@Bell1976, 8; @Bell1985a, 95; @Bell1987b and @Bell2004, 61).
+
+Bell seems to be referring to the assumption that the settings of the instruments are independent of the state of the particle pairs at the source. This is an assumption that is not entailed by relativistic causality, and is sometimes called the *measurement independence* assumption. A violation of this assumption is sometimes called *superdeterminism*.
+
+@MyrvoldGenoveseShimony2020 discuss the ramifications of rejecting the measurement independence assumption, and the possibility of constructing a theory that reproduces the quantum correlations while maintaining local causality. However they do not consider the possibility of a retrocausal theory, in which the measurement independence assumption is violated, but in which local causality is maintained. Kastner's relativistic transactional interpretation (RTI) is a theory that reproduces the quantum correlations while maintaining local causality.
+
+## Possibilist Transactional Quantum Theory
+
+In @sec-PTQT, I will discuss Kastner's RTI under the name Possibilist Transactional Quantum Theory (PTQT) with its implications for Bell locality and the ontology of the *inorganic layer* of the Real Sphere. PTQT provides a framework in which the quantum substratum is a domain of potentiality, and events in spacetime arise from transactions within this substratum. This interpretation allows for a reconciliation of quantum mechanics with relativistic causality, while also providing a physical explanation for the observed correlations that violate Bell inequalities. 

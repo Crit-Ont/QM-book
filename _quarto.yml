@@ -1,0 +1,48 @@
+project:
+  type: book
+
+book:
+  title: "Quantum Theory and Locality"
+  author: "Robert Johnston"
+  date: today
+  chapters:
+    - index.qmd
+    - part: "Foundations"
+      chapters:
+        - chapters/01-intro.qmd
+        - chapters/A_Relational_Reconstruction_of_Quantum_Mechanics.qmd
+    - part: "Locality and Realism"
+      chapters:
+        - chapters/Locality_and_quantum_mechanics.qmd
+        - chapters/bell-theorem.qmd
+        - chapters/Metaphysics-bell-theorem.qmd
+        - chapters/Bell-locality-and-PTI.qmd
+        - chapters/Haag-locality.qmd
+        - chapters/State_preparation_and_the_substratum.qmd
+
+    - chapters/08-conclusion.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    code-fold: true
+  pdf:
+    papersize: a5
+    header-includes:
+     - \usepackage{braket}
+    include-in-header:
+     - text:
+         \usepackage{physics}
+         \usepackage{pdfpages}
+         \renewcommand*{\partpagestyle}{empty}
+         \usepackage{makeidx}
+         \makeindex
+
+    documentclass: scrbook
+    toc: true
+    number-sections: true

@@ -1,0 +1,5 @@
+# Preface {.unnumbered}
+
+This book examines the relationship between quantum theory and the principle of locality — the idea that objects are only directly influenced by their immediate surroundings. Beginning with the foundational formalism of quantum mechanics, the book traces the historical and conceptual development of the Einstein–Podolsky–Rosen (EPR) argument, Bell's theorem, and the experimental tests of Bell inequalities that followed. It concludes with a survey of interpretive positions on nonlocality, realism, and what quantum theory implies about the structure of physical reality.
+
+The intended audience is readers with some background in quantum mechanics (e.g., an undergraduate course covering the postulates, Hilbert spaces, and basic operator formalism) who want a focused, rigorous treatment of locality-related questions.

@@ -1,0 +1,9 @@
+/.quarto/
+/_book/
+/_freeze/
+*.html
+.Rproj.user/
+.Rhistory
+.RData
+__pycache__/
+*.pyc

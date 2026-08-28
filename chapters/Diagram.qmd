@@ -1,0 +1,87 @@
+---
+title: "Diagram"
+format: html
+---
+
+flowchart TD
+
+%% =========================
+%% PRE-SPACETIME SUBSTRATUM
+%% =========================
+
+subgraph SUB[Quantum Substratum (Pre‑Spacetime)]
+    IP[Internal Periodicity<br>(Compton frequency / internal clocks)]
+end
+
+%% =========================
+%% U-PROCESS (TEMPORAL)
+%% =========================
+
+subgraph UPROC[U‑Process (Temporal Evolution)]
+    UE[Unitary Evolution<br>(OW generation & propagation)]
+end
+
+%% =========================
+%% INCIPIENT TRANSACTIONS
+%% =========================
+
+subgraph INCIPIENT[Incipient Transactions<br>(Atemporal Possibilities)]
+    IT[OW–CW Matches<br>Born‑rule weights]
+end
+
+%% =========================
+%% NU-PROCESS (ATEMPORAL)
+%% =========================
+
+subgraph NUPROC[NU‑Process (Atemporal Actualisation)]
+    NU[Spontaneous Symmetry Breaking<br>Selection of one transaction]
+end
+
+%% =========================
+%% SPACETIME EMERGENCE
+%% =========================
+
+subgraph ST[Spacetime Event]
+    SE[Actualised Transaction<br>Emitter–Absorber Interval]
+end
+
+%% =========================
+%% FLOW RELATIONS
+%% =========================
+
+IP --> UPROC
+UPROC --> INCIPIENT
+INCIPIENT --> NUPROC
+NUPROC --> ST
+
+```{mermaid}
+mindmap
+  root((RTI: Temporal & Atemporal Structure))
+
+    Internal Periodicity
+      Compton Frequency
+      Internal Clocks
+      Proto-Time
+      Inertial Frames
+
+    U-Process (Temporal)
+      Unitary Evolution
+      Offer Waves
+      Evolution of Possibilities
+      Pre-Spacetime Dynamics
+
+    Incipient Transactions (Atemporal)
+      OW–CW Matches
+      Born-Rule Weights
+      Coexisting Possibilities
+
+    NU-Process (Atemporal)
+      Symmetry Breaking
+      Actualisation
+      Selection of One Transaction
+
+    Spacetime Emergence
+      Emitter–Absorber Interval
+      Energy Transfer
+      Spacetime Event
+```

@@ -1,0 +1,107 @@
+# What distinguishes a photon in the quantum substratum from that in spacetime?
+
+The key distinction is this: Wheeler–Feynman (WF) direct‑action theory is formulated *in spacetime*, while Kastner’s Relativistic Transactional Interpretation (RTI) relocates the same direct‑action ontology into a *pre‑spacetime quantum substratum*.  
+RTI keeps the *interaction ontology* of WF but changes the arena in which it operates.
+
+This shift is not cosmetic — it is the single move that allows RTI to solve the measurement problem, avoid Haag’s theorem, and explain spacetime emergence.
+
+Below is the clearest, structured comparison you can use in your manuscript.
+
+---
+
+##  WF direct‑action theory: everything happens *in spacetime*
+WF assumes:
+
+- Spacetime is fundamental.  
+- Emitters and absorbers are spacetime objects.  
+- Retarded and advanced fields are spacetime fields.  
+- The “handshake” occurs between events already located in spacetime.  
+- The photon is a real field propagating along null geodesics.  
+
+In WF:
+
+- The emitter sends a retarded field forward in time.  
+- The absorber responds with an advanced field backward in time.  
+- The combination yields a time‑symmetric interaction.  
+
+Everything is drawn on Minkowski diagrams because the theory *lives* in Minkowski spacetime.
+
+---
+
+## RTI: the same direct‑action ontology, but moved *out of spacetime*
+RTI keeps the direct‑action idea but changes the ontological domain:
+
+### RTI’s key move:
+> Offer waves (OW) and confirmation waves (CW) do not exist in spacetime.  
+They exist in a pre‑spacetime quantum substratum.
+
+This substratum is:
+
+- non‑spatiotemporal  
+- non‑geometric  
+- not metric‑bearing  
+- not dynamical in time  
+- a domain of possibilities, not events  
+
+Thus:
+
+- OW and CW are not fields propagating.  
+- They are transition amplitudes in the direct‑action QFT.  
+- They do not have trajectories, speeds, or locations.  
+- They do not occur *in* time — they are atemporal.
+
+The transaction (NU‑process) is what *creates* spacetime events.
+
+---
+
+## How RTI relates to WF: the conceptual mapping
+
+### WF → RTI mapping
+
+| Wheeler–Feynman (spacetime ontology) | RTI (substratum ontology) |
+|--------------------------------------|----------------------------|
+| Retarded field from emitter | Offer wave (OW) in substratum |
+| Advanced field from absorber | Confirmation wave (CW) in substratum |
+| Handshake between spacetime events | Atemporal matching of possibilities |
+| Photon is a spacetime field | Photon is a *possibility* until actualisation |
+| Spacetime is fundamental | Spacetime is emergent from transactions |
+| Interaction occurs in time | Interaction is atemporal; time emerges |
+
+RTI is essentially:
+
+> WF direct‑action theory + quantum measurement + spacetime emergence.
+
+WF gives the interaction ontology.  
+RTI adds the ontological domain shift and the actualisation mechanism.
+
+---
+
+##  Why RTI *must* move WF out of spacetime
+WF faces several deep problems if kept inside spacetime:
+
+###  Haag’s theorem
+Local QFT in spacetime cannot consistently define interacting fields.  
+RTI avoids this because OW/CW are not local spacetime fields.
+
+###  Measurement problem
+WF has no non‑unitary collapse mechanism.  
+RTI introduces the NU‑process (actualisation) as a real physical transition.
+
+###  Retrocausality
+WF’s advanced waves look retrocausal because they are drawn in spacetime.  
+RTI avoids retrocausality because the waves are not in time.
+
+### Spacetime emergence
+WF assumes spacetime is already there.  
+RTI explains how spacetime comes into being through transactions.
+
+## The clean conceptual summary
+
+> WF describes direct‑action interactions between spacetime events.  
+RTI relocates those interactions into a pre‑spacetime substratum, where OW and CW are possibilities.  
+A completed transaction then *creates* the spacetime events WF starts with.
+
+WF: spacetime → interaction  
+RTI: interaction → spacetime
+
+This reversal is the entire philosophical and technical innovation.

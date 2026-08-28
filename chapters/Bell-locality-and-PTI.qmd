@@ -1,0 +1,176 @@
+---
+  bibliography: ../references.bib
+---
+
+# Possibilist Transactional Quantum Theory (PTQT) {#sec-PTQT}
+
+Ruth Kastner’s "Relativistic (Possibilist) Transactional Interpretation” (PTI) gives a very explicit and technically different answer to Bell locality than Cramer’s original Transactional Interpretation (TI).
+Her answer is grounded in *direct‑action quantum field theory (DAQFT)*  and an ontology of *real physical possibilities* leading to spacetime events.  
+
+This chapter presents a concise conceptual summary of Possibilist Transactional Quantum Theory (PTQT), focusing on two questions:
+
+1. How PTQT describes the ontological status of the quantum substratum.
+2. How PTQT addresses Bell locality and correlations without invoking spacetime superluminal causation.
+
+
+## The quantum substratum
+
+Kastner’s PTI is often described as an interpretation of quantum mechanics (@kastner2022transactional). In this chapter, it is treated as a physical theory with explicit ontological commitments; for that reason, the name *Possibilist Transactional Quantum Theory* (PTQT) is used to reflect this status.
+
+The core claim is that a *quantum substratum* of physically real possibilities underlies, and specifically causes, observable spacetime events. The theory addresses both the measurement problem and Bell-type correlations.
+
+In PTQT, the substratum is a domain of potentiality rather than a collection of actual spacetime objects. It is not directly observable; its structure is inferred from the formalism and from the pattern of actualized events.
+
+A potentiality-based reading of quantum theory has precedents (e.g., @heisenberg1958physics). PTQT extends this by tying potentiality to a transactional mechanism that yields concrete events. The substratum is an aspect of the inorganic layer in the Real Sphere. It is an extension of the more classical conception that is to be found in Hartmann's writings. Quantum unitary dynamics is a process in the substratum, and the non-unitary actualisation of events is a process that creates events in spacetime.  The spacetime events are also items in the inorganics and exist in the Real Sphere. The substrate exists as the domain of real possibilities and the spacetime is the domain of real events.
+
+On this view, spacetime is not fundamental. Events may be ontologically prior, with spacetime emerging from relations among events. This reframes matter-like entities as emergent from an event-structured process rather than as fundamental substances.
+
+PTQT describes actualization as a stochastic selection among physically possible transactions:
+
+1. A relativistic quantum state evolves into a state supporting multiple possible transactions.
+2. The context defines transition amplitudes/probabilities over distinct possibilities.
+3. One possible transaction is actualized through stochastic selection.
+4. The outcome is a spacetime event and an updated set of future possibilities.
+
+This actualisation process is non-unitary and stochastic and it is a process that creates events in spacetime.  Measurement is modeled as selection among multiple incipient transactions, sometimes described as spontaneous symmetry breaking in the transaction set. The resulting event is an actualized outcome in spacetime, while unrealized alternatives remain non-actualized possibilities.
+
+Measurement actualization is spontaneous symmetry breaking
+In PTQT:
+- Multiple “incipient transactions” exist as possibilities.  
+- A single transaction is actualized via *spontaneous symmetry breaking* according to Kastner but this is an analogical description. We have no Higg's mechanism in the substratum.  The selection is stochastic and non-unitary.
+
+This actualization creates spacetime events. Bell correlations reflect constraints on which transactions can actualize, not causal influences between spacetime-separated detectors.
+
+## Bell locality in PTQT
+
+Bell locality (@sec-bells-theorem) in PTQT applies only to spacetime events but not to quantum possibilities.
+Kastner argues that Bell’s locality condition applies only to actualized spacetime events but not to the pre‑spacetime quantum substratum where offer and confirmation waves exist.
+
+In PTQT, the waves involved in quantum processes are not spacetime objects; they are *possibilities described by state space*.  Thus, Bell’s locality assumption does not apply at the level where entanglement correlations originate.
+
+The Implication is that Bell’s theorem does not constrain PTQT because the correlations arise *before* spacetime events exist — in a domain where “locality” is not defined.
+
+PTQT’s response to Bell’s theorem is that Bell locality applies to *actualized spacetime events*, not to the pre-spacetime domain in which transactional possibilities are defined.
+
+Offer and confirmation waves are treated as elements of that possibilist structure, not as classical signals propagating through spacetime. Under this interpretation, Bell-violating correlations are generated by nonlocal constraints at the possibilist level, rather than by superluminal causal influence between detectors.
+
+PTQT therefore accepts nonlocal correlations while aiming to preserve relativistic covariance: the key process is modeled as atemporal (or pre-spatiotemporal), avoiding a preferred foliation.
+
+Kastner explicitly accepts *nonlocal correlations*, but denies that they imply *spacetime nonlocal causation*.  
+In PTQT, the transaction between emitter and absorber is a *pre‑spacetime process* described by direct‑action theory.  It is not a signal traveling through spacetime, so it does not violate relativistic locality.  
+
+The implication is that Bell violations arise from a *global constraint* in the quantum substratum, not from superluminal influences.
+
+
+##  PTQT correlations
+
+PTI uses direct‑action theory (DAQFT) to explain correlations without hidden variables. It is built on Davies’ quantum direct‑action theory, where interactions occur through:
+- Offer waves (OW)
+- Confirmation waves (CW)
+
+These are not fields propagating locally in spacetime but *nonlocal interaction amplitudes*.  The coupling constant (charge) is interpreted as the amplitude for generating OW/CW.
+
+Bell’s factorizability condition fails because the underlying ontology is *nonlocal by construction*, but not in a way that threatens relativity.
+
+## Retrocausality and atemporal constraint language
+
+A recurring interpretive issue is whether PTQT should be described as retrocausal. A useful distinction is between:
+
+- Dynamical retrocausality (literal backward-in-time causal propagation), and
+- Atemporal/all-at-once constraint structure (global consistency conditions without propagating backward signals).
+
+For PTQT, the second description is typically more precise: advanced mathematical components need not imply dynamical backward causation.
+
+## Photons in the quantum substratum spacetime
+
+A photon in the quantum substratum (PTQT’s pre‑spacetime domain of possibilities) is fundamentally different from a photon in spacetime (the empirical, actualised realm). The distinction is categorical: *one is a possibility, the other is an actualised transaction*.
+
+Core takeaway:  
+A photon in the substratum is an offer wave—a *pre‑spacetime possibility* with no trajectory, no localisation, and no spacetime existence.  
+A photon in spacetime is the actualised transfer of energy–momentum—a *spacetime link* between emitter and absorber created by a completed transaction.
+
+### Photon in the quantum substratum (pre‑spacetime)
+
+Ontological status:
+
+- It is not a particle and not a spacetime object.  
+- It is a possibility amplitude (offer wave) in the direct‑action framework.  
+- It exists only in the quantum substratum, which is *not* spacetime and has no metric, no geometry, no trajectories.
+
+Key properties:
+- No spacetime localisation — it does not “travel”.  
+- No worldline — because worldlines require spacetime.  
+- No energy transfer — unitary evolution does not transfer conserved quantities.  
+- Relational only — it encodes potential emitter–absorber relations.  
+- Time-symmetric — offer and confirmation waves are symmetric until a transaction breaks symmetry.  
+
+Role:
+
+It is part of the U‑process: unitary evolution of possibilities in the substratum.  
+This domain is described in Kastner’s spacetime-emergence account, where spacetime is *not* fundamental but emerges from actualised interactions.   [arXiv.org](https://arxiv.org/pdf/2103.11245)
+
+---
+
+###  Photon in spacetime (actualised)
+Ontological status:  
+- It is the actualised transfer of conserved quantities (energy–momentum).  
+- It is a spacetime connection between an emission event and an absorption event.  
+- It is a causal-set link in the emergent spacetime structure.   [Cambridge University Press & Assessment](https://www.cambridge.org/core/books/transactional-interpretation-of-quantum-mechanics/rti-and-spacetime/97972F492AC0A82A33C9544AA9341D44)
+
+Key properties:
+- Exists only after a transaction (NU‑process).  
+- Defines spacetime events — emission and absorption become actual spacetime nodes.  
+- Carries energy–momentum — unlike the offer wave.  
+- Breaks time symmetry — establishing the arrow of time.  
+- Has a spacetime trajectory (null geodesic) *only after* spacetime exists.
+
+Role:  
+It is part of the NU‑process: the non‑unitary actualisation that creates spacetime structure.  
+Spacetime itself is “a structured set of emission and absorption events connected by photon exchange.”   [Zenodo](https://zenodo.org/records/21404604/files/D19-A%20Structural%20Interpretation%20of%20Transactional%20Entropic%20Gravity%20within%20Collapse-Selection%20Frameworks.pdf)
+
+## Side‑by‑side comparison
+
+| Feature | Photon in quantum substratum | Photon in spacetime |
+|--------|------------------------------|----------------------|
+| Ontological status | Possibility (offer wave) | Actualised energy transfer |
+| Domain | Pre‑spacetime substratum | Emergent spacetime |
+| Trajectory | None | Null geodesic between events |
+| Localisation | Not localisable | Localised emission/absorption events |
+| Energy–momentum | Not transferred | Transferred in transaction |
+| Time structure | Time-symmetric proto‑time | Time-asymmetric spacetime time |
+| Role | Defines potential interactions | Creates spacetime structure |
+
+---
+
+##  Why this distinction matters in RTI
+- Spacetime is emergent, not fundamental.  
+- Photons in the substratum are ingredients of potentiality, not physical objects.  
+- Photons in spacetime are actualised relations that *construct* spacetime.  
+- The measurement problem is resolved because only the NU‑process yields real outcomes.
+
+
+
+## No preferred  frame of reference
+
+Lorentz invariance is preserved because the transactional process is *atemporal* and *pre‑spacetime*, PTI does not require a preferred foliation. This is a major difference from Bohmian mechanics.
+
+Bell nonlocality is explained without violating Lorentz symmetry by operating outside spacetime.
+
+Bell locality fails in PTI because:
+1. The relevant processes occur in a *pre‑spacetime domain where locality is undefined.
+2. Offer and confirmation waves are *nonlocal possibilities*, not spacetime signals.
+3. Actualised outcomes arise from *global constraints* on incipient transactions.
+4. No superluminal communication occurs; relativity is preserved.
+5. Quantum correlations reflect *nonlocal consistency conditions*, not causal influences. 
+
+The explicit, formal position in PTI is that *Bell’s locality assumption  does not apply at the ontological level where quantum processes occur.*
+
+## Conclusion
+
+PTQT has a pre-spacetime, possibilist ontology in which:
+
+1. Quantum possibilities are physically meaningful
+2. Spacetime events are actualized transaction outcomes,
+3. Bell correlations arise from nonlocal possibilist constraints outside spacetime, and
+4. Relativistic structure is preserved by avoiding spacetime superluminal signaling.
+
