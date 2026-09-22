@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Possibilist Transactional Quantum Theory (PTQT) – Quantum Theory and Locality</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/08-conclusion.html" rel="next">
+<link href="../chapters/bell-theorem.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/Bell-locality-and-PTI.html">A transactional quantum theory</a></li><li class="breadcrumb-item"><a href="../chapters/Bell-locality-and-PTI.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Possibilist Transactional Quantum Theory (PTQT)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Quantum Theory and Locality</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foundations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/A_Relational_Reconstruction_of_Quantum_Mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Probabilistic Reconstruction of Quantum Mechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Locality and Realism</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Locality_and_quantum_mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Locality, Microcausality, and Entanglement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/bell-theorem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bell’s Theorem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">A transactional quantum theory</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Bell-locality-and-PTI.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Possibilist Transactional Quantum Theory (PTQT)</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-quantum-substratum" id="toc-the-quantum-substratum" class="nav-link active" data-scroll-target="#the-quantum-substratum"><span class="header-section-number">4.1</span> The quantum substratum</a></li>
+  <li><a href="#time-in-ptqt" id="toc-time-in-ptqt" class="nav-link" data-scroll-target="#time-in-ptqt"><span class="header-section-number">4.2</span> Time in PTQT</a>
+  <ul class="collapse">
+  <li><a href="#process-time-vs.-coordinate-time" id="toc-process-time-vs.-coordinate-time" class="nav-link" data-scroll-target="#process-time-vs.-coordinate-time"><span class="header-section-number">4.2.1</span> Process Time vs.&nbsp;Coordinate Time</a></li>
+  </ul></li>
+  <li><a href="#bell-locality-in-ptqt" id="toc-bell-locality-in-ptqt" class="nav-link" data-scroll-target="#bell-locality-in-ptqt"><span class="header-section-number">4.3</span> Bell locality in PTQT</a></li>
+  <li><a href="#ptqt-correlations" id="toc-ptqt-correlations" class="nav-link" data-scroll-target="#ptqt-correlations"><span class="header-section-number">4.4</span> PTQT correlations</a></li>
+  <li><a href="#retrocausality-and-atemporal-constraint-language" id="toc-retrocausality-and-atemporal-constraint-language" class="nav-link" data-scroll-target="#retrocausality-and-atemporal-constraint-language"><span class="header-section-number">4.5</span> Retrocausality and atemporal constraint language</a></li>
+  <li><a href="#photons-in-the-quantum-substratum-spacetime" id="toc-photons-in-the-quantum-substratum-spacetime" class="nav-link" data-scroll-target="#photons-in-the-quantum-substratum-spacetime"><span class="header-section-number">4.6</span> Photons in the quantum substratum spacetime</a></li>
+  <li><a href="#sec-haag-locality" id="toc-sec-haag-locality" class="nav-link" data-scroll-target="#sec-haag-locality"><span class="header-section-number">4.7</span> Haag locality clash with PTQT</a>
+  <ul class="collapse">
+  <li><a href="#haag-locality-presupposes-spacetime" id="toc-haag-locality-presupposes-spacetime" class="nav-link" data-scroll-target="#haag-locality-presupposes-spacetime"><span class="header-section-number">4.7.1</span> Haag locality presupposes spacetime</a></li>
+  <li><a href="#ptqt-denies-spacetime-at-the-fundamental-level" id="toc-ptqt-denies-spacetime-at-the-fundamental-level" class="nav-link" data-scroll-target="#ptqt-denies-spacetime-at-the-fundamental-level"><span class="header-section-number">4.7.2</span> PTQT denies spacetime at the fundamental level</a></li>
+  <li><a href="#the-consequence-for-axiomatic-foundations" id="toc-the-consequence-for-axiomatic-foundations" class="nav-link" data-scroll-target="#the-consequence-for-axiomatic-foundations"><span class="header-section-number">4.7.3</span> The consequence for axiomatic foundations</a></li>
+  <li><a href="#what-an-operator-algebra-is-in-haags-framework" id="toc-what-an-operator-algebra-is-in-haags-framework" class="nav-link" data-scroll-target="#what-an-operator-algebra-is-in-haags-framework"><span class="header-section-number">4.7.4</span> What an operator algebra <em>is</em> in Haag’s framework</a></li>
+  <li><a href="#ptqts-quantum-substratum-has-no-spacetime" id="toc-ptqts-quantum-substratum-has-no-spacetime" class="nav-link" data-scroll-target="#ptqts-quantum-substratum-has-no-spacetime"><span class="header-section-number">4.7.5</span> PTQT’s quantum substratum has <em>no spacetime</em></a></li>
+  </ul></li>
+  <li><a href="#state-preparation-spacetime-and-the-quantum-substratum" id="toc-state-preparation-spacetime-and-the-quantum-substratum" class="nav-link" data-scroll-target="#state-preparation-spacetime-and-the-quantum-substratum"><span class="header-section-number">4.8</span> State preparation, spacetime and the quantum substratum”</a>
+  <ul class="collapse">
+  <li><a href="#how-state-preparation-influences-the-substratum" id="toc-how-state-preparation-influences-the-substratum" class="nav-link" data-scroll-target="#how-state-preparation-influences-the-substratum"><span class="header-section-number">4.8.1</span> How state preparation influences the substratum</a></li>
+  <li><a href="#why-this-matters-for-measurement-and-bell-correlations" id="toc-why-this-matters-for-measurement-and-bell-correlations" class="nav-link" data-scroll-target="#why-this-matters-for-measurement-and-bell-correlations"><span class="header-section-number">4.8.2</span> Why this matters for measurement and Bell correlations</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4.9</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/Bell-locality-and-PTI.html">A transactional quantum theory</a></li><li class="breadcrumb-item"><a href="../chapters/Bell-locality-and-PTI.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Possibilist Transactional Quantum Theory (PTQT)</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-PTQT" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Possibilist Transactional Quantum Theory (PTQT)</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Ruth Kastner’s “Relativistic (Possibilist) Transactional Interpretation” (PTI) gives a very explicit and technically different answer to Bell locality than Cramer’s original Transactional Interpretation (TI). Her answer is grounded in <em>direct‑action quantum field theory (DAQFT)</em> and an ontology of <em>real physical possibilities</em> leading to spacetime events.</p>
+<p>This chapter presents a concise conceptual summary of Possibilist Transactional Quantum Theory (PTQT), focusing on two questions:</p>
+<ol type="1">
+<li>How PTQT can be reformulated within the probabilistic reconstruction of quantum theory (<a href="A_Relational_Reconstruction_of_Quantum_Mechanics.html" class="quarto-xref"><span>Chapter 1</span></a>)</li>
+<li>How PTQT can be used to describe the ontological status of the quantum substratum.</li>
+<li>How reformulated PTQT addresses Bell locality and correlations without invoking spacetime superluminal causation.</li>
+</ol>
+<p>To address the first point, a simple change will be made. All talk of waves will be eliminated. The immewdiate changes are:</p>
+<ul>
+<li>Offer waves (OWs) will be replaced by <em>emission states</em> (ES) of the emitter.</li>
+<li>Confirmation waves (CWs) will be replaced by <em>absorber states</em> (AS)</li>
+</ul>
+<section id="the-quantum-substratum" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-quantum-substratum"><span class="header-section-number">4.1</span> The quantum substratum</h2>
+<p>Kastner’s PTI is often described as an interpretation of quantum mechanics (<span class="citation" data-cites="kastner2022transactional">Kastner (<a href="../references.html#ref-kastner2022transactional" role="doc-biblioref">2022</a>)</span>). In this chapter, it is treated as a physical theory with explicit ontological commitments; for that reason, the name <em>Possibilist Transactional Quantum Theory</em> (PTQT) is used to reflect this status.</p>
+<p>The core claim is that a <em>quantum substratum</em> of physically real possibilities underlies, and specifically causes, observable spacetime events. The theory addresses both the measurement problem and Bell-type correlations. Except for the ad hoc measurement step in standard quantum theory all quantum processes take place in the substratum. They are not spacetime processes. In PTQT, the substratum is a domain of potentiality rather than a collection of actual spacetime objects. It is not directly observable; its structure is inferred from the formalism and from the pattern of actualized events.</p>
+<p>A potentiality-based reading of quantum theory has precedents (e.g., <span class="citation" data-cites="heisenberg1958physics">Heisenberg (<a href="../references.html#ref-heisenberg1958physics" role="doc-biblioref">1958</a>)</span>). PTQT extends this by tying potentiality to a transactional mechanism that yields concrete events. The substratum is an aspect of the inorganic layer in the Real Sphere. It is an extension of the more classical conception that is to be found in Hartmann’s writings. Quantum unitary dynamics is a process in the substratum, and the non-unitary actualisation of events is a process that creates events in spacetime. The spacetime events are also items in the inorganics and exist in the Real Sphere. The substrate exists as the domain of real possibilities and the spacetime is the domain of real events.</p>
+<p>On this view, spacetime is not fundamental. Events may be ontologically prior, with spacetime emerging from relations among events. This reframes matter-like entities as emergent from an event-structured process rather than as fundamental substances.</p>
+<p>PTQT describes actualisation as a stochastic selection among physically possible transactions:</p>
+<ol type="1">
+<li>A relativistic quantum state evolves into a state supporting multiple possible transactions.</li>
+<li>The context defines transition amplitudes/probabilities over distinct possibilities.</li>
+<li>One possible transaction is actualized through stochastic selection.</li>
+<li>The outcome is a spacetime event and an updated set of future possibilities.</li>
+</ol>
+<p>This actualisation process is non-unitary and stochastic and it is a process that creates events in spacetime. Measurement is modeled as selection among multiple incipient transactions, sometimes described as spontaneous symmetry breaking in the transaction set. The resulting event is an actualised outcome in spacetime, while unrealised alternatives remain non-actualised possibilities.</p>
+<p>Measurement actualisation is spontaneous symmetry breaking In PTQT:</p>
+<ul>
+<li>Multiple “incipient transactions” exist as possibilities.<br>
+</li>
+<li>A single transaction is actualised via <em>spontaneous symmetry breaking</em> according to Kastner but this is an analogical description. THere is no Higg’s mechanism in the substratum. The selection is stochastic and non-unitary.</li>
+</ul>
+<p>This actualisation creates spacetime events. Bell correlations reflect constraints on which transactions can actualise, not causal influences between spacetime-separated detectors.</p>
+</section>
+<section id="time-in-ptqt" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="time-in-ptqt"><span class="header-section-number">4.2</span> Time in PTQT</h2>
+<p>If time in the empirical sense is emergent then what is it that indexes the dynamics in the pre-spacetime quantum substrate? In the PTQT spacetime is not a fundamental container. Instead, physical spacetime and its temporal structure emerge from a deeper, extra-spatiotemporal realm called the quantum substratum (<span class="citation" data-cites="kastner2022transactional">Kastner (<a href="../references.html#ref-kastner2022transactional" role="doc-biblioref">2022</a>)</span>). The time mechanism in this framework operates through the following core concepts:</p>
+<ul>
+<li>In PTQT, the quantum substratum consists of quantum states existing as potentiae (possibilities or unactualized offers and responses). Time does not flow smoothly as a background parameter in this substratum. Rather, spacetime events and their structural connections are established exclusively by “actualized transactions”.
+<ul>
+<li>When a quantum emitter sends an offer wave and an absorber responds, a transaction can become actualized (a process corresponding to objective wave function collapse).</li>
+<li>An actualized transaction instantiates a discrete emission event, an absorption event, and the invariant spacetime interval connecting them. Spacetime effectively “crystallizes” out of these events.</li>
+</ul></li>
+<li>PTQT rejects the “block universe” ontology where past, present, and future all exist simultaneously.
+<ul>
+<li>In the quantum substratum, the primary temporal feature is ontological change driven by the state transitions of interacting quantum systems.</li>
+<li>The “Now” is the shifting domain of active actualization. The future does not exist yet because it consists only of unactualized possibilities within the substratum. A time index (<span class="math inline">\(t\)</span>) is merely a relational way of indexing and mapping these changes after they have been archived into the emergent fabric of spacetime.</li>
+</ul></li>
+<li>Standard quantum mechanics operates on time-symmetric laws, making it a mystery why time only moves forward. RTI solves this by introducing a physical mechanism for temporal symmetry breaking:
+<ul>
+<li>The unactualized offers and responses in the substratum are fundamentally time-symmetric.</li>
+<li>However, the non-unitary phase where an absorber responds transforms the time-symmetric propagator into the time-asymmetric Feynman propagator (which propagates positive energy forward in time).</li>
+<li>This actualization process inherently breaks time symmetry, generating a unidirectional arrow of time and grounding the Second Law of Thermodynamics.</li>
+</ul></li>
+</ul>
+<p>In summary, normal time is relational and emergent: the quantum substratum itself is extra-spatiotemporal, while the linear flow of time we perceive is a macro-level byproduct of discrete, irreversible quantum transactions breaking symmetry at the micro-level.</p>
+<p>As the quantum substratum is extra-spatiotemporal, how can we speak of “unitary evolution” (like the solution of the Heisenberg equation or quantum operators) which explicitly depends on a time parameter? Ruth Kastner resolves this by introducing a strict distinction between two fundamentally different types of time: Coordinate Time (which is emergent and relational) and Process Time (which is fundamental and non-spatial). Here is how unitary dynamics can function in a substratum without relying on physical spacetime:</p>
+<section id="process-time-vs.-coordinate-time" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="process-time-vs.-coordinate-time"><span class="header-section-number">4.2.1</span> Process Time vs.&nbsp;Coordinate Time</h3>
+<p>In PTQT, the time parameter (t) found in standard quantum mechanical equations does not refer to the ticking of a clock in physical space. Instead, it refers to Process Time:</p>
+<ul>
+<li>Process Time: This is a sequential, logical ordering of changes in quantum states. It represents the generation of possibilities—offers being sent and responses being generated. It is a time of becoming, not a time of extension.</li>
+<li>Coordinate Time: This is the time we measure with macro-clocks (e.g., <span class="math inline">\(x^0\)</span> in relativity). It only exists after a transaction has collapsed the quantum state and created a physical event.</li>
+</ul>
+<p>Therefore, unitary dynamics describes the evolution of possibilities in Process Time before they ever “solidify” into the Coordinate Time of our physical universe. Because the substratum lacks spatial distance, all quantum systems within it are fundamentally in a state of immediate, non-local availability to one another.Therefore: - Unitary evolution in this realm is not a movement through space over time. The time <span class="math inline">\(t\)</span> in the unitary operator <span class="math inline">\(U(t)=e^{-iHt}\)</span> acts as a relational index for these internal state changes, rather than a measure of duration through an external physical container.</p>
+</section>
+</section>
+<section id="bell-locality-in-ptqt" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="bell-locality-in-ptqt"><span class="header-section-number">4.3</span> Bell locality in PTQT</h2>
+<p>Bell locality (<a href="bell-theorem.html" class="quarto-xref"><span>Chapter 3</span></a>) applies only to statistics of spacetime events. Kastner argues that Bell’s locality condition applies only to actualized spacetime events in PTQT but are not relevant to the pre‑spacetime quantum substratum where emission states and absorber states exist.</p>
+<p>In PTQT, the states involved in quantum processes are not spacetime objects; they are <em>possibilities described by state space</em>. Thus, Bell’s locality assumption does not apply at the level where entanglement correlations originate. That is in the quantum substratum. The Implication is that Bell’s theorem does not constrain PTQT because the correlations arise <em>before</em> spacetime events exist — in a domain where “Bell locality” is not defined.</p>
+<p>PTQT’s response to Bell’s theorem is that Bell locality applies to <em>actualized spacetime events</em>, not to the pre-spacetime domain in which transactional possibilities are defined.</p>
+<p>Emission states and absorber states are treated as elements of that possibilist structure, not as classical signals propagating through spacetime. Under this interpretation, Bell-violating correlations are generated by nonlocal constraints at the possibilist level, rather than by superluminal causal influence between detectors.</p>
+<p>PTQT therefore accepts nonlocal correlations while aiming to preserve relativistic covariance: the key process is modeled as <em>pre-spatiotemporal</em>, avoiding a preferred foliation.</p>
+<p>Kastner explicitly accepts <em>nonlocal correlations</em>, but denies that they imply <em>spacetime nonlocal causation</em>. The causal aspect belong to the substratum. In PTQT, the transaction between emitter and absorber is a <em>pre‑spacetime process</em> realised through the exchange of a virtula photon. It is not a signal traveling through spacetime, so it does not violate relativistic locality. The implication is that Bell violations arise from a <em>global constraint</em> in the quantum substratum, not from superluminal influences.</p>
+</section>
+<section id="ptqt-correlations" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="ptqt-correlations"><span class="header-section-number">4.4</span> PTQT correlations</h2>
+<p>PTI uses direct‑action theory (DAQFT) to explain correlations and events without hidden variables. It is built on Davies’ quantum direct‑action theory, where interactions occur through:</p>
+<ul>
+<li>Emission states (ES) - actually the quantum state of the emitter (ES) <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>Confirmation waves (CW) - actually the quantum state of the absorber (AS)</li>
+</ul>
+<p>These are not fields propagating locally in spacetime but <em>nonlocal interaction amplitudes</em>. The coupling constant (charge) is interpreted as the amplitude for generating ES/AS.</p>
+<p>Bell’s factorizability condition fails because the underlying ontology is <em>nonlocal by construction</em>, but not in a way that threatens relativity.</p>
+</section>
+<section id="retrocausality-and-atemporal-constraint-language" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="retrocausality-and-atemporal-constraint-language"><span class="header-section-number">4.5</span> Retrocausality and atemporal constraint language</h2>
+<p>A recurring interpretive issue is whether PTQT should be described as retrocausal. A useful distinction is between:</p>
+<ul>
+<li>Dynamical retrocausality (literal backward-in-time causal propagation), and</li>
+<li>Atemporal/all-at-once constraint structure (global consistency conditions without propagating backward signals).</li>
+</ul>
+<p>For PTQT, the second description is typically more precise: advanced mathematical components need not imply dynamical backward causation.</p>
+</section>
+<section id="photons-in-the-quantum-substratum-spacetime" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="photons-in-the-quantum-substratum-spacetime"><span class="header-section-number">4.6</span> Photons in the quantum substratum spacetime</h2>
+<p>A <em>real photon</em> in QFT is an on‑shell excitation of the electromagnetic field that can be detected, while a <em>virtual photon</em> is an off‑shell internal line in a perturbative calculation that never appears as an observable particle. That is the essential distinction.</p>
+<p>A <em>real photon</em> satisfies the physical dispersion relation <span class="math inline">\(E^2 = p^2 c^2\)</span> and can be emitted, absorbed, or counted. A <em>virtual photon</em> does not satisfy this relation; it is a mathematical intermediate in the perturbation expansion of the S‑matrix and cannot be directly observed. <a href="https://www.physicsforums.com/insights/what-are-virtual-particles-intro/">Physics Forums</a></p>
+<p>Real photons (on‑shell) are:</p>
+<ul>
+<li>Actual quanta of the electromagnetic field.<br>
+</li>
+<li>Appear in the <em>external legs</em> of Feynman diagrams.<br>
+</li>
+<li>Are <strong>detectable</strong>: you can measure their energy, momentum, polarization.</li>
+</ul>
+<p>Their key features are</p>
+<ul>
+<li><em>On‑shell:</em> obey <span class="math inline">\(E^2 = p^2 c^2\)</span>.</li>
+<li><em>Long‑lived:</em> propagate freely.<br>
+</li>
+<li><em>Transfer energy–momentum:</em> they mediate real radiation.<br>
+</li>
+<li><em>Create or annihilate excitations</em> in detectors or atoms.</li>
+</ul>
+<p>Real photons correspond to actual events — “something happened” in the experimental sense. <a href="https://link.springer.com/article/10.1140/epjs/s11734-021-00075-3">Springer</a></p>
+<p>Virtual photons (off‑shell) are</p>
+<ul>
+<li>Internal lines in Feynman diagrams.<br>
+</li>
+<li>Mathematical devices in the Dyson expansion of the S‑operator.<br>
+</li>
+<li>Never appear as asymptotic states.</li>
+</ul>
+<p>Their key features are:</p>
+<ul>
+<li><em>Off‑shell:</em> do <em>not</em> satisfy <span class="math inline">\(E^2 = p^2 c^2\)</span>.<br>
+</li>
+<li><em>Short‑lived:</em> exist only within the integral over intermediate momenta.<br>
+</li>
+<li><em>Not observable:</em> cannot be detected or counted.<br>
+</li>
+<li><em>Encode interactions:</em> they represent how charged particles influence each other.</li>
+</ul>
+<p>Virtual photons are not just part of the <em>dressing</em> of charged particles, where in standard quantum field theory they appear as aspects of the calaculation. In PTQT they make the transaction.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 35%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Real photon</th>
+<th>Virtual photon</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>On/off shell</em></td>
+<td>On‑shell</td>
+<td>Off‑shell</td>
+</tr>
+<tr class="even">
+<td><em>Appears where?</em></td>
+<td>External legs</td>
+<td>Internal lines</td>
+</tr>
+<tr class="odd">
+<td><em>Detectable?</em></td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td><em>Energy–momentum relation</em></td>
+<td>Satisfies (E^2 = p^2 c^2)</td>
+<td>Violates it</td>
+</tr>
+<tr class="odd">
+<td><em>Role</em></td>
+<td>Physical radiation</td>
+<td>Mediates interactions mathematically</td>
+</tr>
+<tr class="even">
+<td><em>Lifetime</em></td>
+<td>Arbitrary</td>
+<td>Constrained by propagator structure</td>
+</tr>
+<tr class="odd">
+<td><em>Physical status</em></td>
+<td>Actual field excitation</td>
+<td>Bookkeeping device in perturbation theory</td>
+</tr>
+</tbody>
+</table>
+<p>Why the distinction matters</p>
+<ul>
+<li><em>Only real photons</em> correspond to measurable radiation.</li>
+<li><em>Virtual photons</em> are indispensable in calculations but their physical existence is in the quantum substratum.</li>
+<li>Confusing the two leads to misconceptions like “vacuum is full of particles popping in and out of existence.” In QFT, virtual particles are <em>terms in an integral</em>, not literal transient objects, but in PTQT they are essential for completing the transaction.</li>
+</ul>
+<p>A photon in the substratum completes the transaction between the ES and the set of possible AS’s.</p>
+<p>Ontological status of the virtual photon in the quantum substratum (PTQT):</p>
+<ul>
+<li>It is not a particle and not a spacetime object.<br>
+</li>
+<li>It completes the transaction between the emitter and the selected absorber.</li>
+<li>It exists only in the quantum substratum, which is <em>not</em> spacetime and has no metric, no geometry, no trajectories.</li>
+</ul>
+<p>Ontological statusof the real photon in spacetime (PTQT):</p>
+<ul>
+<li><p>It is the actualised transfer of conserved quantities (energy–momentum).<br>
+</p></li>
+<li><p>It is a spacetime connection between an emission event and an absorption event.<br>
+</p></li>
+<li><p>It is a causal-set link in the emergent spacetime structure.</p></li>
+<li><p>Key properties:</p>
+<ul>
+<li>Exists only after a transaction (NU‑process).<br>
+</li>
+<li>Defines spacetime events — absorption events become actual spacetime nodes.</li>
+<li>Carries energy–momentum — unlike the transaction photon.<br>
+</li>
+<li>Has a spacetime trajectory (null geodesic) <em>only after</em> spacetime exists.</li>
+</ul></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 50%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Photon in quantum substratum</th>
+<th>Photon in spacetime</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ontological status</td>
+<td>Possibility (ES)</td>
+<td>Actualised energy transfer</td>
+</tr>
+<tr class="even">
+<td>Domain</td>
+<td>Pre‑spacetime substratum</td>
+<td>Emergent spacetime</td>
+</tr>
+<tr class="odd">
+<td>Trajectory</td>
+<td>None</td>
+<td>Null geodesic between events</td>
+</tr>
+<tr class="even">
+<td>Localisation</td>
+<td>Not localisable</td>
+<td>Localised emission/absorption events</td>
+</tr>
+<tr class="odd">
+<td>Energy–momentum</td>
+<td>Not transferred</td>
+<td>Transferred in transaction</td>
+</tr>
+<tr class="even">
+<td>Time structure</td>
+<td>Time-symmetric proto‑time</td>
+<td>Time-asymmetric spacetime time</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Defines potential interactions</td>
+<td>Creates spacetime structure</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sec-haag-locality" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="sec-haag-locality"><span class="header-section-number">4.7</span> Haag locality clash with PTQT</h2>
+<p>In axiomatic foundation for quantum theory as proposed in <span class="citation" data-cites="haag1996">Haag (<a href="../references.html#ref-haag1996" role="doc-biblioref">1996</a>)</span>, Haag locality is a spacetime concept, and PTQT denies that spacetime is fundamental. In PTQT the operators act on pre-spacetime quantum states Therefore, Haag locality cannot be a fundamental axiom of quantum theory if PTQT is correct<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<section id="haag-locality-presupposes-spacetime" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="haag-locality-presupposes-spacetime"><span class="header-section-number">4.7.1</span> Haag locality presupposes spacetime</h3>
+<p>Haag’s Local Quantum Physics (LQP) is built on three pillars:</p>
+<ul>
+<li>Local operator algebras assigned to <em>spacetime regions</em><br>
+</li>
+<li>Microcausality: operators in spacelike‑separated regions commute<br>
+</li>
+<li>Haag duality: the algebra of a region equals the commutant of its causal complement</li>
+</ul>
+<p>All of these pillars require:</p>
+<ul>
+<li>A background spacetime<br>
+</li>
+<li>A causal structure<br>
+</li>
+<li>Localizable observables<br>
+</li>
+<li>Region‑indexed operator algebras</li>
+</ul>
+<p>So Haag locality is intrinsically spacetime‑dependent. It invokes nothing more fundamental than spacetime geometry. It is an <em>axiomatisation of QFT on spacetime</em>.</p>
+</section>
+<section id="ptqt-denies-spacetime-at-the-fundamental-level" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="ptqt-denies-spacetime-at-the-fundamental-level"><span class="header-section-number">4.7.2</span> PTQT denies spacetime at the fundamental level</h3>
+<p>In Kastner’s PTQT emitter states (ES) and absorber states (AS) exist in a pre‑spacetime substratum</p>
+<ul>
+<li>Incipient transactions are <em>pre-spacetime</em> possibilities. There is a substratum time but this a time intrinsic to the non-zero rest mass particles concerned in the transaction.</li>
+<li>The combination of an ES with potential absorber states defines a set of possible transactions.</li>
+<li>The combination of the ES and each AS defines a set of trasnsition probabilities for the possible transactions.</li>
+<li>An event is actualized when one of the possible transactions is selected via a stochastic process. This is a spontaneous process that selects one transaction from the set of possibilities.</li>
+<li>Actualisation <em>creates</em> a spacetime interval event.<br>
+</li>
+<li>Spacetime is not fundamental, but emergent from transactions</li>
+<li>The emergent space-time is an attribute of the inorganic layer <a href="https://crit-ont.github.io/quarto-oi/Why_critical_ontology.html">in a general ontology</a>.</li>
+</ul>
+<p>Therefore, Before actualisation, there are no spacetime regions, no causal complements, and no operator algebras indexed by regions. Haag locality simply has no domain of definition at the fundamental level. Therefore Haag locality cannot be fundamental. If spacetime is emergent then Haag locality is also emergent. It is a constraint on actualised events, not a fundamental axiom of the quantum substratum.</p>
+<p>Thus Haag locality is at best an emergent constraint on actualised events, not a fundamental axiom of the quantum world. This means Haag’s framework cannot be the foundational axiomatic structure of quantum theory if PTQT is correct. It becomes a derived effective theory that is valid only after actualisation, not before. It is a phenomenological constraint on the emergent spacetime layer, not a fundamental axiom of the quantum substratum.</p>
+</section>
+<section id="the-consequence-for-axiomatic-foundations" class="level3" data-number="4.7.3">
+<h3 data-number="4.7.3" class="anchored" data-anchor-id="the-consequence-for-axiomatic-foundations"><span class="header-section-number">4.7.3</span> The consequence for axiomatic foundations</h3>
+<p>If PTQT is correct:</p>
+<ul>
+<li>Haag locality cannot be a fundamental axiom<br>
+</li>
+<li>Haag–Kastler algebraic QFT cannot be the foundational ontology<br>
+</li>
+<li>Local operator algebras are emergent structures<br>
+</li>
+<li>The axioms of LQP describe only the emergent spacetime layer</li>
+</ul>
+<p>This is analogous to:</p>
+<ul>
+<li>Thermodynamics not being fundamental if statistical mechanics is correct</li>
+<li>Continuum elasticity not being fundamental if atomic physics is correct</li>
+</ul>
+<p>Haag locality becomes a phenomenological constraint on the emergent spacetime layer.</p>
+</section>
+<section id="what-an-operator-algebra-is-in-haags-framework" class="level3" data-number="4.7.4">
+<h3 data-number="4.7.4" class="anchored" data-anchor-id="what-an-operator-algebra-is-in-haags-framework"><span class="header-section-number">4.7.4</span> What an operator algebra <em>is</em> in Haag’s framework</h3>
+<p>In Haag’s Local Quantum Physics (LQP), the basic objects are:</p>
+<ul>
+<li><p>C<span class="math inline">\(^*\)</span>‑algebras or von Neumann algebras</p></li>
+<li><p>indexed by spacetime regions <span class="math inline">\(\symcal{A}(\mathcal{O})\)</span><br>
+</p></li>
+<li><p>satisfying locality:</p>
+<p><span class="math display">\[
+[\mathcal{A}(\mathcal{O}_1), \mathcal{A}(\mathcal{O}_2)] = 0
+\quad \text{if } \mathcal{O}_1 \text{ and } \mathcal{O}_2 \text{ are spacelike separated}
+\]</span></p></li>
+</ul>
+<p>Everything — locality, duality, isotony, covariance — depends on spacetime geometry.</p>
+<p>Without spacetime, the indexing collapses and the axioms cannot even be <em>stated</em>.</p>
+</section>
+<section id="ptqts-quantum-substratum-has-no-spacetime" class="level3" data-number="4.7.5">
+<h3 data-number="4.7.5" class="anchored" data-anchor-id="ptqts-quantum-substratum-has-no-spacetime"><span class="header-section-number">4.7.5</span> PTQT’s quantum substratum has <em>no spacetime</em></h3>
+<p>In Kastner’s PTQT:</p>
+<ul>
+<li>Offer waves (OWs) and confirmation waves (CWs) exist in a pre‑spacetime substratum<br>
+</li>
+<li>Incipient transactions are <em>atemporal</em> possibilities<br>
+</li>
+<li>Actualisation (NU‑process) <em>creates</em> a spacetime interval<br>
+</li>
+<li>Before actualisation, there are no regions, no causal complements, no metric, no light cones.</li>
+</ul>
+<p>Thus:</p>
+<blockquote class="blockquote">
+<p>There is no structure on which a Haag–Kastler net of algebras could be defined.</p>
+</blockquote>
+<p>The substratum is not a manifold, not a causal set, not a metric space, not a topological space.<br>
+It is a Hilbert‑space possibility structure, not a spacetime.</p>
+<p>One might try to salvage locality by saying:</p>
+<blockquote class="blockquote">
+<p>“Let’s index algebras by something other than spacetime — e.g., degrees of freedom, emitters, absorbers, or ES/AS channels.”</p>
+</blockquote>
+<p>But this fails because the notion of locality exists in the substratum as locality is a relation between <em>regions</em> and the substratum has no regions. Therefore operator locality is undefined in the substratum. Not violated — simply meaningless.</p>
+<section id="what-can-exist-in-the-substratum" class="level4" data-number="4.7.5.1">
+<h4 data-number="4.7.5.1" class="anchored" data-anchor-id="what-can-exist-in-the-substratum"><span class="header-section-number">4.7.5.1</span> What <em>can</em> exist in the substratum</h4>
+<p>PTQT <em>does</em> have algebraic structure, but it is:</p>
+<ul>
+<li>global, not local<br>
+</li>
+<li>constraint‑based, not region‑based<br>
+</li>
+<li>possibility‑based, not event‑based<br>
+</li>
+<li>atemporal, not temporal<br>
+</li>
+<li>nonlocal in Bell’s sense, but non‑signalling</li>
+</ul>
+<p>You can have:</p>
+<ul>
+<li>Hilbert space<br>
+</li>
+<li>operators representing OWs and CWs<br>
+</li>
+<li>amplitudes<br>
+</li>
+<li>global constraints on entangled systems<br>
+</li>
+<li>Born‑rule weights for incipient transactions</li>
+</ul>
+<p>But you cannot have:</p>
+<ul>
+<li>local operator algebras<br>
+</li>
+<li>nets of algebras<br>
+</li>
+<li>microcausality<br>
+</li>
+<li>Haag duality<br>
+</li>
+<li>isotony<br>
+</li>
+<li>region‑indexed structures</li>
+</ul>
+<p>Because all of these require spacetime, which PTQT says is not fundamental. If PTQT is correct, Haag locality is not fundamental and cannot serve as an axiomatic foundation for quantum theory. Haag locality becomes:</p>
+<ul>
+<li>an emergent constraint<br>
+</li>
+<li>applicable only after actualisation<br>
+</li>
+<li>valid only within spacetime<br>
+</li>
+<li>not part of the fundamental ontology</li>
+</ul>
+</section>
+<section id="operators-exist-in-the-substratum-but-they-are-not-local-operators" class="level4" data-number="4.7.5.2">
+<h4 data-number="4.7.5.2" class="anchored" data-anchor-id="operators-exist-in-the-substratum-but-they-are-not-local-operators"><span class="header-section-number">4.7.5.2</span> Operators exist in the substratum — but they are <em>not local operators</em></h4>
+<p>PTQT’s quantum substratum is:</p>
+<ul>
+<li>pre‑spacetime<br>
+</li>
+<li>atemporal<br>
+</li>
+<li>nonlocal in Bell’s sense<br>
+</li>
+<li>a Hilbert‑space possibility structure</li>
+</ul>
+<p>In this domain, there are:</p>
+<ul>
+<li>Hilbert space<br>
+</li>
+<li>linear operators<br>
+</li>
+<li>self‑adjoint operators<br>
+</li>
+<li>projectors<br>
+</li>
+<li>unitary operators<br>
+</li>
+<li>tensor‑product structure<br>
+</li>
+<li>global constraints on entangled states</li>
+</ul>
+<p>These operators form a perfectly good algebraic structure: a C*‑algebra or von Neumann algebra of operators on Hilbert space. This is the same algebraic backbone used in the probabilistic reconstruction of quantum mechanics (<a href="A_Relational_Reconstruction_of_Quantum_Mechanics.html" class="quarto-xref"><span>Chapter 1</span></a>). PTQT supports a global operator algebra, not a local one. It is a Hilbert‑space operator algebra and the operators act on:</p>
+<ul>
+<li>Emitter states<br>
+</li>
+<li>Absorber response states</li>
+<li>entangled states<br>
+</li>
+<li>prepared states<br>
+</li>
+<li>global possibility structures</li>
+</ul>
+<p>This is the usual algebra of quantum theory:</p>
+<p><span class="math display">\[
+\mathcal{B}(\mathcal{H})
+\]</span></p>
+<p>or a suitable C*‑subalgebra. It supports unitary evolution - the U‑process is governed by: <span class="math display">\[
+U(t) = e^{-iHt}
+\]</span></p>
+<p>where <span class="math inline">\(t\)</span> is Process Time (internal periodicity), not spacetime time.</p>
+<ul>
+<li>It supports projectors
+<ul>
+<li>Incipient transactions correspond to projectors onto matched OW–CW subspaces.</li>
+</ul></li>
+<li>It supports Born‑rule weights
+<ul>
+<li>The algebra supports the spectral decomposition needed for probabilities.</li>
+</ul></li>
+<li>It supports global constraints
+<ul>
+<li>Entangled systems impose nonlocal constraints on the operator algebra.</li>
+</ul></li>
+<li>It does <em>not</em> support locality
+<ul>
+<li>Because locality requires spacetime, which is emergent.</li>
+</ul></li>
+</ul>
+<p>Once a transaction actualises:</p>
+<ul>
+<li>a spacetime interval is created<br>
+</li>
+<li>emitter and absorber actualise spacetime events</li>
+</ul>
+<p>At this stage quantum mechanics has done its job. There is no need for operators to be assigned to regions. Thus, local operator algebras are not even emergent structures let alone fundamental ones.</p>
+<p>Operators in the PTQT substratum must have an algebraic structure — and they do.<br>
+But it is a global Hilbert‑space operator algebra, not a Haag–Kastler local algebra.</p>
+<p>Therefore:</p>
+<ul>
+<li>Global operator algebra: fundamental<br>
+</li>
+<li>Local operator algebra: not applicable<br>
+</li>
+<li>Haag locality: not applicable</li>
+<li>PTQT substratum: algebraic but nonlocal</li>
+<li>Spacetime locality: created by actualisation</li>
+</ul>
+<p>This is exactly the distinction needed to reconcile PTQT with operator theory while rejecting Haag locality as a foundational axiom.</p>
+</section>
+</section>
+</section>
+<section id="state-preparation-spacetime-and-the-quantum-substratum" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="state-preparation-spacetime-and-the-quantum-substratum"><span class="header-section-number">4.8</span> State preparation, spacetime and the quantum substratum”</h2>
+<p>State preparation has similarities with measurement. A measurement leaves the system under investigation in a certain state. State preparation in Kastner’s Relativistic Transactional Interpretation (PTQT) (<span class="citation" data-cites="kastner2022transactional">Kastner (<a href="../references.html#ref-kastner2022transactional" role="doc-biblioref">2022</a>)</span>) influences the quantum substratum by <em>selecting and shaping the set of incipient transactions</em> that exist as physically real possibilities prior to spacetime actualisation. It does so through isolating the system under investigation and then controlling its interactions with a preparatory absorber.</p>
+<p>The setting up of the preparatory absorber takes place in spacetime, but the state preparation is not in spacetime; it is a constraint on the <em>pre‑spacetime possibility structure</em> from which actualised events emerge.</p>
+<p>In PTQT, state preparation modifies the quantum substratum by altering the configuration of emission states of the system under investigation and absorber states that exist as pre‑spacetime possibilities. These prepared states determine <em>which incipient transactions are available</em> and therefore <em>which spacetime events can emerge</em> through the non‑unitary (NU) actualisation process.</p>
+<p>Kastner describes the quantum substratum as a pre‑spacetime domain consisting of quantum systems with rest mass and internal periodicities that act as “internal clocks” and define inertial frames. The substratum contains in Kastner’s terminology:</p>
+<ul>
+<li>Offer waves (OWs) generated by emitters<br>
+</li>
+<li>Confirmation waves (CWs) generated by absorbers<br>
+</li>
+<li>Incipient transactions: matched OW–CW pairs representing <em>possible</em> energy‑transferring events</li>
+</ul>
+<p>These are representations of possibilities in Hilbert space.</p>
+<p>The generalised probability reconstructions of quantum mechanics and now the enhanced PTQT show that the quantum substratum is a pre‑spacetime domain in which the possibilities for actualisation are constrained by the global structure of the system. State preparation is a process that constrains the substratum and thereby influences which spacetime events can emerge. There is no place other than historical respect for Schrodinger to talk about waves. So instead of describing the processes in terms of <em>offer waves</em> and <em>confirmation waves</em>, we can describe them in terms of the <em>emission states</em> (ES) of the system under investigation and the <em>absorber states</em> (AS).</p>
+<p>State preparation—whether by measurement, filtering, or controlled interactions—changes the quantum state that undergoes unitary evolution (the U‑interaction).</p>
+<p>Prepared states determine:</p>
+<ul>
+<li>which ES exist,</li>
+<li>their amplitudes,</li>
+<li>their phase relations,</li>
+<li>the set of potential absorbers,</li>
+<li>and therefore the structure of incipient transactions.</li>
+</ul>
+<p>Thus, state preparation reconfigures the landscape of possibilities in the substratum.</p>
+<section id="how-state-preparation-influences-the-substratum" class="level3" data-number="4.8.1">
+<h3 data-number="4.8.1" class="anchored" data-anchor-id="how-state-preparation-influences-the-substratum"><span class="header-section-number">4.8.1</span> How state preparation influences the substratum</h3>
+<p>It changes the set of emission states by preparing a quantum state, which changes the ES of a system. Since ES are the “invitations to transact,” modifying them directly alters the substratum’s possibility structure. It changes which absorber states can respond to the emission states, and therefore which incipient transactions can form. Absorbers respond only to ES components compatible with their coupling.</p>
+<p>State preparation can: - suppress certain components (e.g., filtering out momentum modes), - enhance others, - or entangle systems so that absorber states reflect joint absorber behaviour.</p>
+<p>It changes the pattern of incipient transactions by forming them wherever ES–AS matches occur. State preparation determines:</p>
+<ul>
+<li>which matches are possible,<br>
+</li>
+<li>their relative weights,<br>
+</li>
+<li>their global constraints (especially in entangled systems).</li>
+</ul>
+<p>This is crucial because actualisation selects one incipient transaction via what Kastner calls spontaneous symmetry breaking. There is no explanatory mechanism for this “symmetry breaking” in PTQT, but the selection of the actual outcome is more analogous to random sampling. But there is no sampling mechanism. All there is, is a dispositional weighted set of tendencies for each possibletransaction and a stochastically selected outcome.</p>
+</section>
+<section id="why-this-matters-for-measurement-and-bell-correlations" class="level3" data-number="4.8.2">
+<h3 data-number="4.8.2" class="anchored" data-anchor-id="why-this-matters-for-measurement-and-bell-correlations"><span class="header-section-number">4.8.2</span> Why this matters for measurement and Bell correlations</h3>
+<p>Because state preparation determines the set of incipient transactions, it also determines:</p>
+<ul>
+<li>the correlations that can appear,</li>
+<li>the global constraints on entangled systems,</li>
+<li>and the structure of possible actualisations.</li>
+</ul>
+<p>This is why PTQT can explain Bell correlations without spacetime nonlocality:<br>
+the correlations arise from global constraints in the substratum, not from signals between spacetime events.</p>
+<p>State preparation influences the quantum substratum in PTQT by altering the configuration of emission states through selection of a preferred absorber state via transactions in the pre‑spacetime substratum.</p>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.9</span> Conclusion</h2>
+<p>PTQT has a pre-spacetime, possibilist ontology in which:</p>
+<ol type="1">
+<li>Quantum possibilities are physically meaningful</li>
+<li>Spacetime events are actualized transaction outcomes,</li>
+<li>Bell correlations arise from nonlocal possibilist constraints outside spacetime, and</li>
+<li>Relativistic structure is preserved by avoiding spacetime superluminal signaling.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-haag1996" class="csl-entry" role="listitem">
+Haag, Rudolf. 1996. <em>Local Quantum Physics: Fields, Particles, Algebras</em>. Second Revised and Enlarged Edition. Springer-Verlag.
+</div>
+<div id="ref-heisenberg1958physics" class="csl-entry" role="listitem">
+Heisenberg, Werner. 1958. <em>Physics and Philosophy: The Revolution in Modern Science</em>. Harper &amp; Row.
+</div>
+<div id="ref-kastner2022transactional" class="csl-entry" role="listitem">
+Kastner, Ruth E. 2022. <em>The Transactional Interpretation of Quantum Mechanics: A Relativistic Treatment</em>. 2nd ed. Cambridge University Press.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The offer wave is the quantum state of the emitter, which is a physically real possibility in the substratum. It is not a spacetime field or signal. Kastner often uses the term “offer wave” to describe this possibility amplitude, but it is important to note that it is not a propagating field in spacetime. It is a nonlocal amplitude in the pre-spacetime substratum. Similarly for the confirmation wave, which is the quantum state of the absorber (AS).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Note that the point here is the inconsistency between the two theories<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/bell-theorem.html" class="pagination-link" aria-label="Bell’s Theorem">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bell’s Theorem</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/08-conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; A Probabilistic Reconstruction of Quantum Mechanics – Quantum Theory and Locality</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/Locality_and_quantum_mechanics.html" rel="next">
+<link href="../index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/A_Relational_Reconstruction_of_Quantum_Mechanics.html">Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/A_Relational_Reconstruction_of_Quantum_Mechanics.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Probabilistic Reconstruction of Quantum Mechanics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Quantum Theory and Locality</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foundations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/A_Relational_Reconstruction_of_Quantum_Mechanics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Probabilistic Reconstruction of Quantum Mechanics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Locality and Realism</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Locality_and_quantum_mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Locality, Microcausality, and Entanglement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/bell-theorem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bell’s Theorem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">A transactional quantum theory</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/Bell-locality-and-PTI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Possibilist Transactional Quantum Theory (PTQT)</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-observables-and-sigma-complexes" id="toc-sec-observables-and-sigma-complexes" class="nav-link active" data-scroll-target="#sec-observables-and-sigma-complexes"><span class="header-section-number">1.1</span> Observables and <span class="math inline">\(\sigma\)</span>-Complexes</a></li>
+  <li><a href="#proposition" id="toc-proposition" class="nav-link" data-scroll-target="#proposition"><span class="header-section-number">1.2</span> Proposition</a></li>
+  <li><a href="#quantum-states" id="toc-quantum-states" class="nav-link" data-scroll-target="#quantum-states"><span class="header-section-number">1.3</span> Quantum States</a>
+  <ul class="collapse">
+  <li><a href="#probability-measures" id="toc-probability-measures" class="nav-link" data-scroll-target="#probability-measures"><span class="header-section-number">1.3.1</span> Probability Measures</a></li>
+  </ul></li>
+  <li><a href="#pure-and-mixed-states" id="toc-pure-and-mixed-states" class="nav-link" data-scroll-target="#pure-and-mixed-states"><span class="header-section-number">1.4</span> Pure and Mixed States</a></li>
+  <li><a href="#properties-or-observables" id="toc-properties-or-observables" class="nav-link" data-scroll-target="#properties-or-observables"><span class="header-section-number">1.5</span> Properties or Observables</a></li>
+  <li><a href="#symmetries" id="toc-symmetries" class="nav-link" data-scroll-target="#symmetries"><span class="header-section-number">1.6</span> Symmetries</a>
+  <ul class="collapse">
+  <li><a href="#conditional-states" id="toc-conditional-states" class="nav-link" data-scroll-target="#conditional-states"><span class="header-section-number">1.6.1</span> Conditional States</a></li>
+  <li><a href="#total-probability-in-classical-and-quantum-conditional-probability" id="toc-total-probability-in-classical-and-quantum-conditional-probability" class="nav-link" data-scroll-target="#total-probability-in-classical-and-quantum-conditional-probability"><span class="header-section-number">1.6.2</span> Total Probability in Classical and Quantum Conditional Probability</a></li>
+  </ul></li>
+  <li><a href="#sec-measurement-problem" id="toc-sec-measurement-problem" class="nav-link" data-scroll-target="#sec-measurement-problem"><span class="header-section-number">1.7</span> The Measurement Problem</a></li>
+  <li><a href="#ideal-measurement" id="toc-ideal-measurement" class="nav-link" data-scroll-target="#ideal-measurement"><span class="header-section-number">1.8</span> Ideal Measurement</a></li>
+  <li><a href="#conditioning-and-reduction" id="toc-conditioning-and-reduction" class="nav-link" data-scroll-target="#conditioning-and-reduction"><span class="header-section-number">1.9</span> Conditioning and Reduction</a></li>
+  <li><a href="#beyond-unitary-evolution" id="toc-beyond-unitary-evolution" class="nav-link" data-scroll-target="#beyond-unitary-evolution"><span class="header-section-number">1.10</span> Beyond Unitary Evolution</a></li>
+  <li><a href="#failure-of-automorphism-description" id="toc-failure-of-automorphism-description" class="nav-link" data-scroll-target="#failure-of-automorphism-description"><span class="header-section-number">1.11</span> Failure of Automorphism Description</a></li>
+  <li><a href="#state-reduction-in-dynamics" id="toc-state-reduction-in-dynamics" class="nav-link" data-scroll-target="#state-reduction-in-dynamics"><span class="header-section-number">1.12</span> State Reduction in Dynamics</a></li>
+  <li><a href="#internal-interactions" id="toc-internal-interactions" class="nav-link" data-scroll-target="#internal-interactions"><span class="header-section-number">1.13</span> Internal Interactions</a></li>
+  <li><a href="#sec-The_double_slit_experiment" id="toc-sec-The_double_slit_experiment" class="nav-link" data-scroll-target="#sec-The_double_slit_experiment"><span class="header-section-number">1.14</span> The double slit experiment</a>
+  <ul class="collapse">
+  <li><a href="#standard-configuration" id="toc-standard-configuration" class="nav-link" data-scroll-target="#standard-configuration"><span class="header-section-number">1.14.1</span> Standard configuration</a></li>
+  <li><a href="#the-introduction-of-an-interaction-with-a-pointer" id="toc-the-introduction-of-an-interaction-with-a-pointer" class="nav-link" data-scroll-target="#the-introduction-of-an-interaction-with-a-pointer"><span class="header-section-number">1.14.2</span> The introduction of an interaction with a pointer</a></li>
+  </ul></li>
+  <li><a href="#critique-of-experimental-interpretation" id="toc-critique-of-experimental-interpretation" class="nav-link" data-scroll-target="#critique-of-experimental-interpretation"><span class="header-section-number">1.15</span> Critique of Experimental Interpretation</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/A_Relational_Reconstruction_of_Quantum_Mechanics.html">Foundations</a></li><li class="breadcrumb-item"><a href="../chapters/A_Relational_Reconstruction_of_Quantum_Mechanics.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Probabilistic Reconstruction of Quantum Mechanics</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-A_Relational_Reconstruction_of_Quantum_Mechanics" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">A Probabilistic Reconstruction of Quantum Mechanics</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>In this chapter familiarity with standard non-relativistic quantum mechanics will be assumed. This will provide the background for are reconstruction that is a generalisation of classical probability of events.</p>
+<p>The mathematical formulation to be discussed here is a modification of Kochen’s Reconstruction of Quantum Mechanics <span class="citation" data-cites="kochen2015reconstruction">(<a href="../references.html#ref-kochen2015reconstruction" role="doc-biblioref">Kochen 2015</a>)</span>. It concentrates on a mathematical formulation using a union of <span class="math inline">\(\sigma\)</span>-algebras that he calls a <strong>complex</strong>. In Kochen’s reformulation, it is through the interaction of a quantum system under consideration with another system that properties gain physical values. Such properties are said by Kochen to be <strong>relational</strong> or <strong>extrinsic</strong>, as opposed to fixed intrinsic properties such as the charge of an electron.</p>
+<p>While the mathematics depends heavily on the reconstruction by Kochen, it makes use of von Neumann <span class="math inline">\(*\)</span>-algebras (see Thirring <span class="citation" data-cites="thirring1979course">(<a href="../references.html#ref-thirring1979course" role="doc-biblioref">Thirring 1979</a>)</span>) rather than the Boolean algebras used by Kochen. This choice may seem unnecessarily mathematical for non-relativistic quantum mechanics but it is made to avoid any hint of a logical interpretation and will be useful when discussiong relativistic quantum mechanics and field theory. This formulation also differs from Kochen’s in the treatment and assignment of both intrinsic and extrinsic properties. The extrinsic properties will be treated here as an actualization of potential, <a href="https://crit-ont.github.io/quarto-oi/The-ontology-of-dispositions.html"><em>dispositional properties</em></a>, of the quantum entity that are shaped by its context. Dispositional properties, represented by operators and conttingent properties, are not fixed but can take on different values depending on the context of the interaction. The intrinsic properties, such as mass and charge, are fixed and do not change with context.</p>
+<section id="sec-observables-and-sigma-complexes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-observables-and-sigma-complexes"><span class="header-section-number">1.1</span> Observables and <span class="math inline">\(\sigma\)</span>-Complexes</h2>
+<p>In the mathematical formulation of quantum mechanics, a physical system, <span class="math inline">\(\mathbf{S}\)</span>, is characterized by a list of properties (called observables in standard quantum mechanics) that can be represented by abstract <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> self-adjoint operators:</p>
+<p><span class="math display">\[\mathcal{O}_\mathbf{S}=\{ \hat{X}_i = \hat{X}^*_i \mid i \in \mathcal{I}_\mathbf{S}\},\]</span></p>
+<p>with <span class="math inline">\(\mathcal{I}_\mathbf{S}\)</span> a set of indices depending on <span class="math inline">\(\mathbf{S}\)</span>, where every operator <span class="math inline">\(\hat{X} \in \mathcal{O}_\mathbf{S}\)</span> represents a physical property characteristic of <span class="math inline">\(\mathbf{S}\)</span>, such as the total momentum, energy, or spin of all particles belonging to an ensemble of (possibly infinitely many) particles constituting the system <span class="math inline">\(\mathbf{S}\)</span>. In standard quantum mechanics there are properties that are not represented by abstract operators, such as charge and mass. In non-formal presentation the space on which operators operate is often left unspecified in strict mathematical terms. In the formal presentation here, the space on which the operators operate is a separable Hilbert space <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span> associated with the system <span class="math inline">\(\mathbf{S}\)</span>. A system is a related collectiom of <a href="file:///C:/Users/Robert/OneDrive/Quarto/OI-book/_book/Quantum_objects.html">quantum objects</a></p>
+<p>At every time <span class="math inline">\(t\)</span>, there is a representation of <span class="math inline">\(\mathcal{O}_\mathbf{S}\)</span> by self-adjoint operators acting on a separable Hilbert space <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>:</p>
+<p><span class="math display">\[\mathcal{O}_\mathbf{S} \ni \hat{X}_i \mapsto X_i = X^*_i \in \mathcal{A}(\mathcal{H}_\mathbf{S}),\]</span></p>
+<p>where <span class="math inline">\(\mathcal{A}(\mathcal{H}_\mathbf{S})\)</span> is the <span class="math inline">\(*\)</span>-algebra of all bounded operators acting on <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>.</p>
+<p>In general, the operators in the <span class="math inline">\(*\)</span>-algebra do not all commute. This has deep physical consequences:</p>
+<ul>
+<li>Properties that cannot appear together are represented in quantum mechanics by self-adjoint operators that do not all commute.</li>
+<li>The sets of operators that do commute provide a set of properties for a measurable mathematical structure which is a <span class="math inline">\(\sigma\)</span>-algebra.</li>
+</ul>
+<p>The <span class="math inline">\(\sigma\)</span>-algebra is essential to constructing mathematical probability models using the Kolmogorov axiomization <span class="citation" data-cites="kolmogorov2018">(<a href="../references.html#ref-kolmogorov2018" role="doc-biblioref">Kolmogorov 2018</a>)</span>. Therefore, each collection of commuting observables of the object has an associated <span class="math inline">\(\sigma\)</span>-algebra. So, a collection of <span class="math inline">\(\sigma\)</span>-algebras that together capture all the property values associated with the object covers all possible events for that object in itself. This structure is the minimal one which contains all the <span class="math inline">\(\sigma\)</span>-algebras arising from all the properties of the system.</p>
+<p>Each dispositional property of an object, such as spin or position, has a <span class="math inline">\(\sigma\)</span>-algebra of possible values that appear in interaction with other objects. All these <span class="math inline">\(\sigma\)</span>-algebras form a complex property structure for the object under consideration. The formal definition of this notion is as follows:</p>
+<blockquote class="blockquote">
+<p><strong>Definition:</strong> Let <span class="math inline">\(F\)</span> be a family of <span class="math inline">\(\sigma\)</span>-algebras. The <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q_F\)</span> based on <span class="math inline">\(F\)</span> is the union, <span class="math inline">\(\cup B\)</span>, of all <span class="math inline">\(\sigma\)</span>-algebras <span class="math inline">\(B\)</span> lying in <span class="math inline">\(F\)</span>:</p>
+<p><span class="math display">\[Q_F = \bigcup_{B \in F} B.\]</span></p>
+</blockquote>
+<p>Generally, the family <span class="math inline">\(F\)</span> is left implicit, and reference is simply made to a <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q\)</span>; however, the family <span class="math inline">\(F\)</span> does tie the complex to an object that has properties that take values depending on the set of possible interactions that it can have with other objects. Usually, <span class="math inline">\(\sigma\)</span>-complexes that are closed under the formation of sub-<span class="math inline">\(\sigma\)</span>-algebras are discussed. It is possible, in any case, to always close a <span class="math inline">\(\sigma\)</span>-complex by adding all its sub-<span class="math inline">\(\sigma\)</span>-algebras. This complex will include all the possible values that the dispositional properties of a particle can take in all possible interaction contexts. <span class="math inline">\(B\)</span> denotes the <span class="math inline">\(\sigma\)</span>-algebra relating to the property values of a particular (commuting) set of observables of the particle or system.</p>
+<p>In the mathematical formulation of quantum mechanics, <span class="math inline">\(\mathcal{H}\)</span> is a Hilbert space. For the quantum object under consideration, all properties are represented by self-adjoint operators and possible events are represented by projection operators. For pairwise commuting projection operators, closure under the operation of orthogonal complement and countable product <span class="math inline">\(\prod_i \pi_i\)</span> forms a <span class="math inline">\(\sigma\)</span>-algebra. The family of all such <span class="math inline">\(\sigma\)</span>-algebras forms a <span class="math inline">\(\sigma\)</span>-complex, <span class="math inline">\(Q(\mathcal{H})\)</span>, for the object in its possible interaction contexts.</p>
+</section>
+<section id="proposition" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="proposition"><span class="header-section-number">1.2</span> Proposition</h2>
+<p><em>In quantum mechanics, the operators representing the possible values of the properties of a system form the <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q(\mathcal{H})\)</span> of projections of the Hilbert space <span class="math inline">\(\mathcal{H}\)</span> of the system.</em></p>
+<p>It has been shown <span class="citation" data-cites="kochen2015reconstruction">(<a href="../references.html#ref-kochen2015reconstruction" role="doc-biblioref">Kochen 2015</a>)</span> that this proposition holds and the mathematical formalism using <span class="math inline">\(Q(\mathcal{H})\)</span> is equivalent to the standard quantum formulation of the theory on <span class="math inline">\(\mathcal{H}\)</span>. However, the interpretation of the formalism here is that while a quantum object has a complete set of properties, they appear only when the situation invokes the <span class="math inline">\(\sigma\)</span>-algebra in the complex that allows that property to take a specific set of values.</p>
+</section>
+<section id="quantum-states" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="quantum-states"><span class="header-section-number">1.3</span> Quantum States</h2>
+<p>As presented in <a href="#sec-observables-and-sigma-complexes" class="quarto-xref"><span>Section 1.1</span></a>, the properties of a quantum object are represented by self-adjoint operators, and these operators act on the elements of a Hilbert space. The concept of the state of a quantum system or object will now be presented. This concept of state is closely aligned with that in statistical mechanics, but the probabilistic quantum state is a property of an individual object rather than a statistical ensemble. As quantum states generalize classical probabilities, the discussion starts with a brief overview of probability measures.</p>
+<section id="probability-measures" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="probability-measures"><span class="header-section-number">1.3.1</span> Probability Measures</h3>
+<p>Classical probability <span class="citation" data-cites="kolmogorov2018">(<a href="../references.html#ref-kolmogorov2018" role="doc-biblioref">Kolmogorov 2018</a>)</span> provides a probability measure—a countably additive, <span class="math inline">\([0,1]\)</span>-valued measure—that is a function:</p>
+<p><span class="math display">\[p: B \to [0,1]\]</span></p>
+<p>with domain <span class="math inline">\(B\)</span>, a <span class="math inline">\(\sigma\)</span>-algebra of subsets of the state space <span class="math inline">\(\Omega\)</span>, such that <span class="math inline">\(p(\mathbf{1}) = 1\)</span>, where <span class="math inline">\(\mathbf{1}\)</span> is the identity in the algebra <span class="math inline">\(B\)</span>, and:</p>
+<p><span class="math display">\[p\left(\bigcup_i e_i\right) = \sum_i p(e_i) \quad \text{for pair-wise disjoint elements } e_1, e_2, \dots \text{ in } B.\]</span></p>
+<p>In the case of a system <span class="math inline">\(\mathbf{S}\)</span>, an object more complex than a single particle, the probability function <span class="math inline">\(p\)</span> gives the probabilities over the <span class="math inline">\(\sigma\)</span>-algebra of events for that system as a whole. A physical theory predicts the probabilities of outcomes of any possible situation given the complete initial state.</p>
+<p>States of a system <span class="math inline">\(\mathbf{S}\)</span> in quantum mechanics are, in general, represented by density matrices acting on a Hilbert space, <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>. Density matrices are non-negative, trace-class operators, <span class="math inline">\(\rho\)</span>, of trace <span class="math inline">\(1\)</span>, that is:</p>
+<p><span class="math display">\[\rho = \rho^* \ge 0, \quad \text{with } \text{tr}(\rho)=1.\]</span></p>
+<p>The expectation of a physical quantity, <span class="math inline">\(\hat{X} \in \mathcal{O}_\mathbf{S}\)</span> (the set of properties for the system), at time <span class="math inline">\(t\)</span> in a state given by a density matrix <span class="math inline">\(\rho\)</span> is defined by:</p>
+<p><span class="math display">\[p(X(t)) := \text{tr}(\rho X(t))\]</span></p>
+<p>where <span class="math inline">\(X(t)\)</span> is the operator representing the physical property <span class="math inline">\(\hat{X}(t)\)</span>. This can be extended to all bounded operators in <span class="math inline">\(\mathcal{A}(\mathcal{H}_\mathbf{S})\)</span>, the <span class="math inline">\(*\)</span>-algebra of all bounded operators acting on <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>.</p>
+<p>From the mathematical formulation by Kochen <span class="citation" data-cites="kochen2015reconstruction">(<a href="../references.html#ref-kochen2015reconstruction" role="doc-biblioref">Kochen 2015</a>)</span>, adapted here, there is a one-to-one correspondence between states <span class="math inline">\(p\)</span> on the <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q(\mathcal{H})\)</span> and density operators.</p>
+<p>The use of the same symbol as for the classical event probability <span class="math inline">\(p(x)\)</span> for the quantum state is justified because this mathematical description of the quantum state is a generalization of the classical probability model from a single <span class="math inline">\(\sigma\)</span>-algebra to a <span class="math inline">\(\sigma\)</span>-complex. A density operator <span class="math inline">\(\rho\)</span> defines a probability measure <span class="math inline">\(p\)</span> on <span class="math inline">\(Q(\mathcal{H})\)</span>, the <span class="math inline">\(\sigma\)</span>-complex of projections. The converse, that a state <span class="math inline">\(p\)</span> defines a unique density operator <span class="math inline">\(\rho\)</span> on <span class="math inline">\(\mathcal{H}\)</span>, follows from a theorem of Gleason <span class="citation" data-cites="Gleason1957">(<a href="../references.html#ref-Gleason1957" role="doc-biblioref">Gleason 1957</a>)</span>. A state on the lattice of projections on <span class="math inline">\(\mathcal{H}\)</span> defines a unique density operator. A lattice consists of a partially ordered set in which every pair of elements has a unique least upper bound and a unique greatest lower bound.</p>
+</section>
+</section>
+<section id="pure-and-mixed-states" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="pure-and-mixed-states"><span class="header-section-number">1.4</span> Pure and Mixed States</h2>
+<p>In Quantum Mechanics, there is a one-to-one correspondence between the pure states of a system and rays of unit vectors <span class="math inline">\(\psi\)</span> in <span class="math inline">\(\mathcal{H}\)</span>, such that <span class="math inline">\(p(X) = (\psi, X \psi)\)</span>. The pure states correspond to one-dimensional projections <span class="math inline">\(\pi_\psi\)</span> (with <span class="math inline">\(\psi\)</span> in the image of <span class="math inline">\(\pi_\psi\)</span>) and <span class="math inline">\(p(X) = \text{tr}(\pi_\psi X) = (\psi, X \psi)\)</span>.</p>
+<p>That even the pure states predict probabilities that are not <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span> is what is to be expected of projections onto property values. A pure state simply predicts the probabilities of property values that can become actual in interactions. Mixed states are mixtures of the pure states, and in general, there is no unique decomposition of a mixed state into pure states.</p>
+</section>
+<section id="properties-or-observables" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="properties-or-observables"><span class="header-section-number">1.5</span> Properties or Observables</h2>
+<p>An observable is nothing more than a property of a quantum object that has a set of possible values that become actual values in interaction with other objects and can appear in various contexts. It need not actually be “observed” in an experiment to do so. In the theory, each such property is represented by a self-adjoint operator that has a spectrum that corresponds to the set of possible property values.</p>
+<p>This concept of property can, as argued above, be treated within the <span class="math inline">\(\sigma\)</span>-complex formulation <span class="citation" data-cites="kochen2015reconstruction">(<a href="../references.html#ref-kochen2015reconstruction" role="doc-biblioref">Kochen 2015</a>)</span>. Kochen shows that there is a one-to-one correspondence between observables <span class="math inline">\(\omega\)</span> such that:</p>
+<p><span class="math display">\[\omega: B(\mathbb{R}) \to Q(\mathcal{H}),\]</span></p>
+<p>where <span class="math inline">\(B(\mathbb{R})\)</span> is the <span class="math inline">\(\sigma\)</span>-algebra of Borel sets (any set in a topological space that can be formed from open sets, or from closed sets, through the operations of countable union, countable intersection, and relative complement is a <em>Borel set</em>) generated by the open intervals of the real numbers, <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p>Given <span class="math inline">\(\pi_\lambda = \omega((-\infty,\lambda])\)</span>, there is a Hermitian operator <span class="math inline">\(A\)</span> such that:</p>
+<p><span class="math display">\[A=\int \lambda \, d\pi_\lambda.\]</span></p>
+<p>Conversely, given a Hermitian operator <span class="math inline">\(A\)</span> on <span class="math inline">\(\mathcal{H}\)</span>, the spectral decomposition above defines the representation of a property <span class="math inline">\(\omega\)</span> as the spectral measure <span class="math inline">\(\omega(s)= \int_s d\pi_\lambda\)</span>, for <span class="math inline">\(s\in B(\mathbb{R})\)</span>. This establishes the one-to-one correspondence and the equivalence of a key element of the reconstruction to that of standard quantum mechanics.</p>
+<p>It follows that if <span class="math inline">\(\omega: B(\mathbb{R}) \to Q(\Omega)\)</span> is a representation of a property with corresponding self-adjoint operator <span class="math inline">\(X\)</span>, then, for the state <span class="math inline">\(p\)</span> with corresponding density operator <span class="math inline">\(\rho\)</span>, the expectation of <span class="math inline">\(\omega\)</span> is:</p>
+<p><span class="math display">\[\text{Exp}_p(\omega) = \text{tr}(X \rho).\]</span></p>
+<p>The result shows the close connection between the spectrum of an operator and the <span class="math inline">\(\sigma\)</span>-algebra of property values. For instance, for the case of a discrete operator <span class="math inline">\(X\)</span>, the spectral decomposition <span class="math inline">\(X = \sum a_i \pi_i\)</span> defines the <span class="math inline">\(\sigma\)</span>-algebra of property values generated by the set <span class="math inline">\(\{\pi_{i}\}_i\)</span>. Conversely, given the <span class="math inline">\(\sigma\)</span>-algebra of property values, the elements of the set <span class="math inline">\(\{\pi_i\}_i\)</span> allow the definition, for each sequence of real numbers <span class="math inline">\(a_i\)</span>, of the Hermitian operator <span class="math inline">\(\sum a_i \pi_i\)</span>.</p>
+</section>
+<section id="symmetries" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="symmetries"><span class="header-section-number">1.6</span> Symmetries</h2>
+<p>In the standard formulation of quantum physics, symmetries appear as unitary transformations of Hilbert space vectors or Hermitian operators. Here they also appear naturally as symmetries of a <span class="math inline">\(\sigma\)</span>-complex.</p>
+<p>An automorphism of a <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q\)</span> is a one-to-one transformation <span class="math inline">\(\alpha: Q\to Q\)</span> of <span class="math inline">\(Q\)</span> onto <span class="math inline">\(Q\)</span> such that for every <span class="math inline">\(\sigma\)</span>-algebra <span class="math inline">\(B\)</span> in <span class="math inline">\(Q\)</span> and all <span class="math inline">\(e, e_1, e_2, \dots\)</span> in every <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[\alpha(e^\bot)=\alpha(e)^\bot \quad \text{and} \quad \alpha \left(\sum_i e_i\right)=\sum_i \alpha(e_i),\]</span></p>
+<p>where <span class="math inline">\(\bot\)</span> denotes the orthogonal complement.</p>
+<p>There is a one-to-one correspondence between symmetries <span class="math inline">\(\alpha: Q(\mathcal{H}) \to Q(\mathcal{H})\)</span> and unitary operators <span class="math inline">\(u\)</span> on <span class="math inline">\(\mathcal{H}\)</span> such that <span class="math inline">\(\alpha(X) = uXu^{-1}\)</span>, for all <span class="math inline">\(X \in Q(\mathcal{H})\)</span>. If a state <span class="math inline">\(p\)</span> corresponds to the density operator <span class="math inline">\(\rho\)</span>, then:</p>
+<p><span id="eq-a1"><span class="math display">\[p_\alpha(X) = p(\alpha^{-1} (X)) = \text{tr}(\rho u^{-1} Xu) = \text{tr}(u \rho u^{-1}X)  \tag{1.1}\]</span></span></p>
+<p>so that the state <span class="math inline">\(p_\alpha\)</span> corresponds to the density operator <span class="math inline">\(u \rho u^{-1}\)</span>. This shows the mathematical equivalence between the <span class="math inline">\(\sigma\)</span>-complex and the density matrix formulations under symmetry transformation.</p>
+<p>Now that the mathematical formalism in terms of <span class="math inline">\(\sigma\)</span>-complexes has been presented, it is possible to start to develop a theory that describes the micro-physical world as governed by quantum chance. By chance is meant objective probability that is a physical property of objects in the real sphere rather than a description of uncertainty in the epistemic sphere. This will, among other attributes, allow the derivation of the quantum conditional probability that provides an explanation of quantum state reduction.</p>
+<p>In standard quantum mechanics, the term “reduction” usually means the reduction of the wavefunction and so is conceptually tied to the Schrödinger picture. Although there is a mathematical equivalence between the Schrödinger picture and the formalism developed in this paper, the state as a set of probability measures on a <span class="math inline">\(\sigma\)</span>-complex of projection operators describes a physics of dispositions rather than waves in either real space or some more abstract space. As such, the position is closer to that of matrix mechanics of early quantum physics, but with more ontological detail on the role of probabilities.</p>
+<section id="conditional-states" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="conditional-states"><span class="header-section-number">1.6.1</span> Conditional States</h3>
+<p>State reduction is a phenomenon that may seem unique to quantum mechanics and has no counterpart in classical mechanics, but this is not the case. Conditional probability plays that role classically, but the objective ensemble or relative frequency interpretations of probability are available, which means that no conceptual problem is posed by the “reduction” of the probability distribution. With this in mind, conditional probability will now be generalized to quantum mechanics.</p>
+<p>If <span class="math inline">\(p\)</span> is a state on <span class="math inline">\(Q(\mathcal{H})\)</span> and <span class="math inline">\(Y\)</span> a projection operator in <span class="math inline">\(Q(\mathcal{H})\)</span> such that <span class="math inline">\(p(Y) \ne 0\)</span>, then it will be shown that there exists a unique state <span class="math inline">\(p(\,\cdot \mid Y)\)</span> conditional on <span class="math inline">\(Y\)</span>. If <span class="math inline">\(\rho\)</span> is the density operator corresponding to <span class="math inline">\(p\)</span>, then to see that the operator <span class="math inline">\(Y\rho Y/\text{tr}(Y \rho Y)\)</span> corresponds to the state <span class="math inline">\(p(\,\cdot \mid Y)\)</span>, note that if <span class="math inline">\(X\)</span> lies in the same <span class="math inline">\(\sigma\)</span>-algebra as <span class="math inline">\(Y\)</span>, then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> commute, so:</p>
+<p><span class="math display">\[\begin{aligned}
+\text{tr}(Y \rho YX)/ \text{tr}(Y \rho Y) &amp;= \text{tr}(\rho XY)/ \text{tr}(\rho Y) \\
+&amp;= p(X \cdot Y)/p(Y) \\
+&amp;= p(X \mid Y),
+\end{aligned}\]</span></p>
+<p>which is the standard form for conditional probability. It is proposed that the expression:</p>
+<p><span id="eq-a2"><span class="math display">\[p(X\mid Y) = \text{tr}(Y \rho YX)/ \text{tr}(Y \rho Y)  \tag{1.2}\]</span></span></p>
+<p>generalizes the conditional probability state to the case when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> do not commute.</p>
+<p>The mapping of <span class="math inline">\(\rho\)</span> to <span class="math inline">\(Y \rho Y/ \text{tr}(\rho Y)\)</span> is the formula for the reduction of state given by the von Neumann-Lüders Projection Rule <span class="citation" data-cites="Luders1951">(<a href="../references.html#ref-Luders1951" role="doc-biblioref">Lüders 1951</a>)</span>. In standard quantum mechanics, this rule is an additional principle appended to quantum mechanics. Here it appears as the unique answer to conditioning a state to a specific projection operator.</p>
+<p>From the symmetry transformation of the state, equation (<a href="#eq-a1" class="quarto-xref">Equation&nbsp;<span>1.1</span></a>), it follows that the conditional state transforms under a symmetry <span class="math inline">\(\alpha\)</span> as:</p>
+<p><span class="math display">\[\begin{aligned}
+p_\alpha (X \mid Y) &amp;= \frac{p_\alpha (X Y)}{p_\alpha(Y)} \\
+&amp;= \frac{p (\alpha^{-1}(X Y))}{p(\alpha^{-1}(Y))} \\
+&amp;= \frac{p (\alpha^{-1}(X) \alpha^{-1}(Y))}{p(\alpha^{-1}(Y))} \\
+&amp;= p(\alpha^{-1}( X) \mid \alpha^{-1}(Y))
+\end{aligned}\]</span></p>
+<p>The results in this subsection hold when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are in the same commutative von Neumann sub-algebra corresponding to a sub-<span class="math inline">\(\sigma\)</span>-algebra of <span class="math inline">\(Q(\mathcal{H})\)</span>. The next subsection covers the more interesting case of when they are in different sub-algebras and there is a correction to the form of the conditional probability that is well known from classical probability.</p>
+</section>
+<section id="total-probability-in-classical-and-quantum-conditional-probability" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="total-probability-in-classical-and-quantum-conditional-probability"><span class="header-section-number">1.6.2</span> Total Probability in Classical and Quantum Conditional Probability</h3>
+<p>The Law of Total Probability (or Law of Alternatives in the discrete case, as here) provides a useful method to partition and analyze conditional probabilities. Firstly, in the classical case, let <span class="math inline">\(Y_1, Y_2, \dots\)</span> lie in a <span class="math inline">\(*\)</span>-algebra of commuting projection operators with <span class="math inline">\(Y_i Y_j= 0\)</span> for <span class="math inline">\(i \ne j\)</span>, and let <span class="math inline">\(Y=\sum_i Y_i\)</span>, then:</p>
+<p><span class="math display">\[\begin{aligned}
+p(X \mid Y) &amp;= p\left(\sum_i (X Y_i)\right)/p(Y) \\
+&amp;= \sum_i (p(X Y_i)/p(Y_i)) (p(Y_i)/p(Y)) \\
+&amp;= \sum_i p(X \mid Y_i)p(Y_i \mid Y)
+\end{aligned}\]</span></p>
+<p>Not only is this partition useful, but it also displays clearly how the quantum case differs from the classical.</p>
+<p>From <a href="#eq-a2" class="quarto-xref">Equation&nbsp;<span>1.2</span></a> above:</p>
+<p><span class="math display">\[\begin{aligned}
+p(X \mid Y) &amp;= \text{tr}(Y\rho Y X)/ \text{tr}(\rho Y) \\
+&amp;= \text{tr}\left(\sum_{i,j} Y_i \rho Y_j X\right) / \text{tr}(\rho Y) \\
+&amp;= \sum_i \text{tr}(Y_i \rho Y_i X)/ \text{tr}(\rho Y) + \sum_{i\ne j} \text{tr}(Y_i \rho Y_j X)/ \text{tr}(\rho Y) \\
+&amp;= \sum_i p(X \mid Y_i)p(Y_i\mid Y) + \sum_{i\ne j} \text{tr}(Y_i \rho Y_j X)/ \text{tr}(\rho Y).
+\end{aligned}\]</span></p>
+<p>This shows that for conditional properties, an interference term must be added to the classical law of total probability. When <span class="math inline">\(X\)</span> commutes with each <span class="math inline">\(Y_i\)</span>, the interference term is zero.</p>
+<p>A measurement of a property is the most familiar example of conditioning with respect to several properties. If a property represented by an operator <span class="math inline">\(A\)</span> has a spectral decomposition <span class="math inline">\(\sum_i a_i \pi_{i}\)</span>, then measuring the observable amounts to registering the values of the properties given by the <span class="math inline">\(\pi_{i}\)</span>. The interaction algebra <span class="math inline">\(B_A\)</span> is that generated by the <span class="math inline">\(\pi_{i}\)</span>.</p>
+<p>Conditioning can be used to define the context for the dynamics of a quantum object. In general, this requires the notion of conditioning with respect to several conditions.</p>
+<p>Given a system with <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q\)</span> and disjoint elements <span class="math inline">\(Y_1, Y_2, \dots\)</span> in a common <span class="math inline">\(\sigma\)</span>-algebra in <span class="math inline">\(Q\)</span> with <span class="math inline">\(\sum_i Y_i=\mathbf{1}\)</span>, and a state <span class="math inline">\(p\)</span>, the state conditional on <span class="math inline">\(Y_1, Y_2, \dots\)</span> is defined to be <span class="math inline">\(p(\,\cdot \mid Y_1, Y_2, \dots) = \sum p(Y_i)p(\,\cdot \mid Y_i)\)</span>. This can be written more compactly as <span class="math inline">\(p(\,\cdot \mid B_A)\)</span>, the state conditional on the interaction algebra <span class="math inline">\(B_A\)</span>.</p>
+<p>For a quantum system, with <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q(\mathcal{H})\)</span> and if <span class="math inline">\(\rho\)</span> is the density operator corresponding to the state <span class="math inline">\(p\)</span>:</p>
+<p><span class="math display">\[p(\cdot \mid B_A) = \sum \text{tr}(\rho Y_i)(Y_i\rho Y_i/ \text{tr}(\rho Y_i)) = \sum Y_i \rho Y_i,\]</span></p>
+<p>so that for each <span class="math inline">\(X\)</span> the probability <span class="math inline">\(p(X \mid B_A) = \sum_i \text{tr}(Y_i\rho Y_i X)\)</span>.</p>
+<p>The natural definition for applying a symmetry to the conditioned state is given by:</p>
+<p><span class="math display">\[p_\alpha (X \mid B_A) = p(\alpha^{-1}(X)\mid \alpha^{-1}(B_A)).\]</span></p>
+<p>The <span class="math inline">\(\sigma\)</span>-algebra <span class="math inline">\(B_A\)</span> generated by the <span class="math inline">\(Y_1, Y_2, \dots\)</span> is simply a sub-algebra of the <span class="math inline">\(\sigma\)</span>-complex.</p>
+<p>There is an equivalence between quantum states and the probabilities describing objective chance. The reconstruction provides a generalization of probability theory that is made evident in the equation for the conditional probability that introduces extra terms due to quantum interference.</p>
+</section>
+</section>
+<section id="sec-measurement-problem" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="sec-measurement-problem"><span class="header-section-number">1.7</span> The Measurement Problem</h2>
+<p> This treatment is adapted from Kochen’s reconstruction of quantum mechanics <span class="citation" data-cites="kochen2015reconstruction">(<a href="../references.html#ref-kochen2015reconstruction" role="doc-biblioref">Kochen 2015</a>)</span>. It is a mathematical formulation of the theory that is equivalent to the standard formulation, but it is not a physical theory. The physical theory is the interpretation of the mathematics. The interpretation here is that the properties of a quantum object appear only in interaction with other objects. The measurement problem arises because the standard formulation of quantum mechanics assumes that an isolated system evolves unitarily according to Schrödinger’s equation, but when a measurement occurs, an eigenvalue of the operator representing the observable being measured is randomly selected as the result of the measurement. This additional mechanism is not explained by the unitary evolution and leads to a contradiction between the predicted state and the observed state after measurement.</p>
+<p>The Measurement Problem refers to a postulate in standard quantum mechanics, which assumes that an isolated system undergoes unitary evolution via Schrödinger’s equation and then an eigenvalue of the operator representing the observable being measured (an observable is a property of the system that the experimental setup is designed to measure) is randomly selected as the result of the measurement, as presented by <span class="citation" data-cites="bohm2001quantum">Bohm (<a href="../references.html#ref-bohm2001quantum" role="doc-biblioref">2001</a>)</span>, for example. However, if a property <span class="math inline">\(\hat{A}\)</span> of a system <span class="math inline">\(S\)</span> is measured by an apparatus <span class="math inline">\(T\)</span>, the total system <span class="math inline">\(S+T\)</span>, if assumed to be isolated, then undergoes unitary evolution. The random selection of an eigenvalue is an additional mechanism.</p>
+</section>
+<section id="ideal-measurement" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="ideal-measurement"><span class="header-section-number">1.8</span> Ideal Measurement</h2>
+<p>The mathematical formulation of an ideal measurement, in standard quantum mechanics, is as follows for system <span class="math inline">\(S\)</span> in a pure state <span class="math inline">\(\phi_k\)</span>:</p>
+<p>Take the spectral decomposition of an operator representing an observable to be<br>
+<span class="math display">\[
+A = \sum_i a_i \pi_i.
+\]</span></p>
+<p>Each <span class="math inline">\(\pi_i\)</span> is a one-dimensional projection with eigenstate <span class="math inline">\(\phi_i\)</span> and <span class="math inline">\(\{a_i\}_i\)</span> is the set of eigenvalues. The apparatus <span class="math inline">\(T\)</span> is assumed to be sensitive to the different eigenstates of <span class="math inline">\(A\)</span>.</p>
+<p>Hence, if the initial state of <span class="math inline">\(S\)</span> is <span class="math inline">\(\phi_k\)</span> and the apparatus <span class="math inline">\(T\)</span> is in a neutral state <span class="math inline">\(\psi_0\)</span>, so that the state of <span class="math inline">\(S+T\)</span> is<br>
+<span class="math display">\[
+\phi_k \otimes \psi_0,
+\]</span> the system evolves into the state<br>
+<span class="math display">\[
+\phi_k \otimes \psi_k,
+\]</span> where the <span class="math inline">\(\{\psi_i\}_i\)</span> are the states of the apparatus operator corresponding to the states <span class="math inline">\(\{\phi_i\}_i\)</span> of the system <span class="math inline">\(S\)</span>.</p>
+<p><span class="math inline">\(T\)</span> and its interaction with <span class="math inline">\(S\)</span> will have been chosen to achieve this: a perfectly designed measurement apparatus to be in <span class="math inline">\(\psi_l\)</span> whenever <span class="math inline">\(S\)</span> is in <span class="math inline">\(\phi_l\)</span> for all <span class="math inline">\(l\)</span>.</p>
+<p>But now, for the case of a more general initial state<br>
+<span class="math display">\[
+\phi = \sum_i c_i \phi_i,
+\]</span> linearity gives:</p>
+<p><span class="math display">\[
+\Gamma = \sum_i c_i \phi_i \otimes \psi_i.
+\]</span></p>
+<p>A problem with this for standard quantum mechanics is that the completed measurement gives a particular apparatus state <span class="math inline">\(\psi_k\)</span>, say, indicating that the state of <span class="math inline">\(S\)</span> is <span class="math inline">\(\phi_k\)</span>, so that the state of the total system is <span class="math inline">\(\phi_k \otimes \psi_k\)</span>, in contradiction to the derived evolved state<br>
+<span class="math display">\[
+\sum_i c_i \phi_i \otimes \psi_i.
+\]</span></p>
+<p>This evolution does not describe what happens in an experiment.</p>
+</section>
+<section id="conditioning-and-reduction" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="conditioning-and-reduction"><span class="header-section-number">1.9</span> Conditioning and Reduction</h2>
+<p>In contrast, the reduction can also be considered from the viewpoint of the conditioning of the states. If the state <span class="math inline">\(p\)</span> of <span class="math inline">\(S+T\)</span> just prior to measurement is <span class="math inline">\(\rho_\Gamma\)</span>, corresponding to<br>
+<span class="math display">\[
+\Gamma = \sum_i c_i \phi_i \otimes \psi_i,
+\]</span> then after the measurement it is in the conditioned state, by <a href="#eq-a2" class="quarto-xref">Equation&nbsp;<span>1.2</span></a>:</p>
+<p><span class="math display">\[
+p(\cdot \mid (\pi_{\phi_k} \otimes I)(I \otimes \pi_{\psi_k}))
+\]</span> <span class="math display">\[
+= \frac{(\pi_{\phi_k} \otimes I)(I \otimes \pi_{\psi_k}) \rho_\Gamma (\pi_{\phi_k} \otimes I)(I \otimes \pi_{\psi_k})}{\mathbf{tr}((\pi_{\phi_k} \otimes I)(I \otimes \pi_{\psi_k}) \rho_\Gamma)} \]</span> <span class="math display">\[= \frac{(\pi_{\phi_k} \otimes I)(I \otimes \pi_{\psi_k}) \left(\sum_i c_i \phi_i \otimes \psi_i\right) (\pi_{\phi_k} \otimes I)(I \otimes \pi_{\psi_k})}{\mathbf{tr}((\pi_{\phi_k} \otimes I)(I \otimes \pi_{\psi_k}) \left(\sum_i c_i \phi_i \otimes \psi_i\right))} \]</span> <span class="math display">\[= \pi_{\phi_k \otimes \psi_k}. \]</span></p>
+<p>Hence, the new conditioned state of <span class="math inline">\(S+T\)</span> is the reduced state <span class="math inline">\(\phi_k \otimes \psi_k\)</span>. This is not surprising as it is conditioned on being in just the <span class="math inline">\(k\)</span>th state of <span class="math inline">\(\rho_\Gamma\)</span> and so it projects that element out. This is not a resolution of the measurement problem but merely makes use of the probabilistic formulation of the theory to show conditioning forces the state reduction.</p>
+</section>
+<section id="beyond-unitary-evolution" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="beyond-unitary-evolution"><span class="header-section-number">1.10</span> Beyond Unitary Evolution</h2>
+<p>Whereas standard quantum mechanics must add a means to reconcile the unitary evolution of <span class="math inline">\(S+T\)</span> with the measured reduced states of <span class="math inline">\(S\)</span> and <span class="math inline">\(T\)</span>, the interpretation argued for in this paper takes the opposite approach to the orthodox interpretation. The point of departure is not the unitary development of an isolated system, but rather the result of an interaction.</p>
+<p>It is the conditions under which dynamical evolution occurs that must be further investigated, rather than the additional reduced state mechanism. Therefore, it should not be taken for granted, as assumed in standard quantum mechanics, that an isolated system evolves unitarily.</p>
+<p>The question to be addressed is whether in a measurement the <span class="math inline">\(\sigma\)</span>-complex structure of <span class="math inline">\(S+T\)</span> undergoes a symmetry transformation at separate times of the process. This is formalised as the condition for the existence of a representation<br>
+<span class="math display">\[
+\alpha : \mathbb{R} \to \mathrm{Aut}(Q).
+\]</span></p>
+<p>The outcome of a measurement cannot be given by a unitary process.</p>
+</section>
+<section id="failure-of-automorphism-description" class="level2" data-number="1.11">
+<h2 data-number="1.11" class="anchored" data-anchor-id="failure-of-automorphism-description"><span class="header-section-number">1.11</span> Failure of Automorphism Description</h2>
+<p>A completed measurement or a state preparation has two distinct elements of<br>
+<span class="math display">\[
+Q(\mathcal{H}) = Q(\mathcal{H}_S \otimes \mathcal{H}_T)
+\]</span> at initial time 0 which end up being mapped to the same element at a later time <span class="math inline">\(t\)</span>.</p>
+<p>One such element is an initial state <span class="math inline">\(\phi \otimes \psi_0\)</span> resulting in a state <span class="math inline">\(\phi_k \otimes \psi_k\)</span>, for some <span class="math inline">\(k\)</span>. However, a second such element <span class="math inline">\(\phi_k \otimes \psi_0\)</span> also results in the state <span class="math inline">\(\phi_k \otimes \psi_k\)</span>.</p>
+<p>If the state <span class="math inline">\(\phi\)</span> is chosen to be distinct from <span class="math inline">\(\phi_k\)</span>, then the two elements<br>
+<span class="math display">\[
+\pi_{\phi \otimes \psi_0}, \qquad \pi_{\phi_k \otimes \psi_0}
+\]</span> of <span class="math inline">\(Q(\mathcal{H})\)</span> both map to the same element<br>
+<span class="math display">\[
+\pi_{\phi_k \otimes \psi_k}.
+\]</span></p>
+<p>However, any automorphism <span class="math inline">\(\alpha_t\)</span> is a one-to-one map on <span class="math inline">\(Q\)</span>, so the measurement process cannot be described by a representation<br>
+<span class="math display">\[
+\alpha : \mathbb{R} \to \mathrm{Aut}(Q),
+\]</span> and hence <strong>a unitary evolution cannot explain what is observed</strong>.</p>
+</section>
+<section id="state-reduction-in-dynamics" class="level2" data-number="1.12">
+<h2 data-number="1.12" class="anchored" data-anchor-id="state-reduction-in-dynamics"><span class="header-section-number">1.12</span> State Reduction in Dynamics</h2>
+<p>The Measurement Problem must be resolved by a theory that includes state reduction in its dynamics in addition to periods of unitary evolution. The GRW theory provides an example of a partial mechanism for this (<span class="citation" data-cites="grw1986">Ghirardi et al. (<a href="../references.html#ref-grw1986" role="doc-biblioref">1986</a>)</span>) — partial because it only reduces the wavefunction to one that is more localised rather than full transition from possibility to actuality.</p>
+<p>However there is a nonlocal guiding field that is problematic as a spacetime entity.</p>
+<p>Kochen’s reconstruction does not provide a non-unitary reduction mechanism. This will require a richer theory. The only current candidate is Relativistic Transactional Interpretation (RTI) (<span class="citation" data-cites="kastner2022transactional">Kastner (<a href="../references.html#ref-kastner2022transactional" role="doc-biblioref">2022</a>)</span>), which is a relativistic extension of the Transactional Interpretation of quantum mechanics (<span class="citation" data-cites="Cramer1986">Cramer (<a href="../references.html#ref-Cramer1986" role="doc-biblioref">1986</a>)</span>). RTI provides a mechanism for state reduction that is consistent with relativity and does not require a preferred frame of reference.</p>
+</section>
+<section id="internal-interactions" class="level2" data-number="1.13">
+<h2 data-number="1.13" class="anchored" data-anchor-id="internal-interactions"><span class="header-section-number">1.13</span> Internal Interactions</h2>
+<p>For a composite system it should not only be outside forces that can break symmetry, but internal interactions. In the state<br>
+<span class="math display">\[
+\Gamma = \sum_i c_i \phi_i \otimes \psi_i
+\]</span> introduced above, the total, but still isolated, system <span class="math inline">\(S+T\)</span> has a set of <span class="math inline">\(i\)</span> property values associated with the states <span class="math inline">\(\{\phi_i \otimes \psi_i\}_i\)</span>.</p>
+<p>However, the interacting object <span class="math inline">\(T\)</span> as part of the system <span class="math inline">\(S+T\)</span> will have the state <span class="math inline">\(\phi_k\)</span> of <span class="math inline">\(S\)</span> appear with probability <span class="math inline">\(|c_k|^2\)</span>. This provides a matrix mechanics interpretation of reduction as a physical transition probability for the system <span class="math inline">\(S\)</span> in the presence of the apparatus <span class="math inline">\(T\)</span>.</p>
+<p>State reduction does take place in isolated compound systems with internal interactions and the reduction of the state is due to the combined system’s properties but traceable to the dispositional power to take specific property values associated with <span class="math inline">\(S\)</span>.</p>
+</section>
+<section id="sec-The_double_slit_experiment" class="level2" data-number="1.14">
+<h2 data-number="1.14" class="anchored" data-anchor-id="sec-The_double_slit_experiment"><span class="header-section-number">1.14</span> The double slit experiment</h2>
+<p>Having discussed the issues with quantum measurement in general, and shown that standard quantum mechanics is incomplete even in a probabilistic reconstruction, Young’s double slit experiment with electrons will be discussed in two variants (for background see Chapter 1 of <span class="citation" data-cites="hall2013">Hall (<a href="../references.html#ref-hall2013" role="doc-biblioref">2013</a>)</span>): The standard configuration, to be described below, <a href="#fig-a1" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>. A configuration with a pointer that acts behind the slits to point in the direction of the passing electron, <a href="#fig-a2" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>.</p>
+<div id="fig-a1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-a1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./images/slits.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-a1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: The setup for the double slit experiment is shown. An electron source sends one particle at a time toward the screen with the slits. The slits are marked by <span class="math inline">\(\delta_1\)</span> and <span class="math inline">\(\delta_2\)</span> and a sample region <span class="math inline">\(\Delta\)</span> is shown on the detector screen.
+</figcaption>
+</figure>
+</div>
+<section id="standard-configuration" class="level3" data-number="1.14.1">
+<h3 data-number="1.14.1" class="anchored" data-anchor-id="standard-configuration"><span class="header-section-number">1.14.1</span> Standard configuration</h3>
+<p>The experiment, <a href="#fig-a1" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>, is as follows:</p>
+<p>There is a source of electrons that move towards a screen with two slits.<br>
+The intensity of the beam is low and only one electron is moving towards the detector at any time.<br>
+The slits are marked <span class="math inline">\(\delta_1\)</span> and <span class="math inline">\(\delta_2\)</span>.<br>
+<span class="math inline">\(\Delta\)</span> be some arbitrary region on the electron detector.</p>
+<p>Let <span class="math inline">\(Y_1\)</span> and <span class="math inline">\(Y_2\)</span> be the projection operators for position in the regions of the two slits <span class="math inline">\(\delta_1\)</span> and <span class="math inline">\(\delta_2\)</span>. Then <span class="math inline">\(Y_1 + Y_2\)</span> is the projection of position for the union <span class="math inline">\(\delta_1 \cup \delta_2\)</span>. Let <span class="math inline">\(X\)</span> be the operator for position in a local region <span class="math inline">\(\Delta\)</span> on the detection screen. Assume the electron is only constrained to pass through the slits without being constrained as to which, then under those conditions the conditional probability is given by the Law of <a href="#eq-a2" class="quarto-xref">Equation&nbsp;<span>1.2</span></a>:</p>
+<p><span class="math display">\[
+p(X|Y_1 + Y_2) = p(X|Y_1)p(Y_1|Y_1 + Y_2) + p(X|Y_2)p(Y_2|Y_1 + Y_2)
+\]</span> <span class="math display">\[
+\quad + \frac{\mathrm{tr}(Y_1 \rho Y_2 X)+\mathrm{tr}(Y_2 \rho Y_1 X)}{\mathrm{tr}((Y_1+ Y_2) \rho (Y_1+ Y_2))}.
+\]</span></p>
+<p>where the property of projection operatrors, <span class="math inline">\(PP=P\)</span> has been used. This can be written more compactly as</p>
+<p><span class="math display">\[
+p(X|Y_1 + Y_2) = p(X|Y_1)p(Y_1|Y_1 + Y_2)
+\]</span> <span class="math display">\[
+\quad + p(X|Y_2)p(Y_2|Y_1 + Y_2) + p(X|Y_1+Y_2)_I
+\]</span></p>
+<p>where <span class="math inline">\(p(X|Y_1+Y_2)_I\)</span> is the interference term.</p>
+<p>Note that if <span class="math inline">\(X\)</span> commutes with either <span class="math inline">\(Y_1\)</span> or <span class="math inline">\(Y_2\)</span>, this interference term vanishes, because <span class="math inline">\(Y_i Y_j = 0\)</span> for <span class="math inline">\(i \ne j\)</span>. This can be observed if the detector is right next to the two-slit screen because <span class="math inline">\(X\)</span> then coincides with either <span class="math inline">\(Y_1\)</span> or <span class="math inline">\(Y_2\)</span>. If the detector is a distance from the two-slit screen (e.g.&nbsp;<span class="math inline">\(X=\Delta\)</span>), then the state of the electron evolves unitarily via <span class="math inline">\(\alpha_t\)</span>, so <span class="math inline">\(\alpha_t(Y_i)=u_t Y_i u^{-1}_t\)</span> no longer commutes with <span class="math inline">\(\alpha(X)\)</span>, giving rise to the non-zero interference term.</p>
+<p>The standard explanation of the interference effect is that the state of the particle is, or acts as, a coherent pair of waves emanating from the slits, which exhibit constructive and destructive interference effects. This was, of course, the explanation for Young’s original experiment with light. For individual quantum particles, however, there is the unexplained local event observed at the detection screen. This is a problem for the theory. While the Born interpretation of the wavefunction provides a probability distribution for the particle position it requires the detection screen, operating outside what is described by the mathematical theory, to act as a sampling mechanism for that distribution.</p>
+<p>The explanation given in this blog is that the two-slit screen functions as a preparation of the state for the particle, by which the state is conditioned, or reduced, to pass through the region <span class="math inline">\(\delta_1\cup\delta_2\)</span>. This reduction is not a position measurement, since <span class="math inline">\(\delta_1\cup\delta_2\)</span> is not a localised region (as it would be for a single-slit screen). Once the particle reaches a detection screen then, in interaction with the screen, it appears in a random local region <span class="math inline">\(\Delta\)</span> and its position takes a value. Just as in the standard Born interpretation of the wavefunction, it is not explained in the theory how the electron takes the value that the detector detects other than invoking random sampling of the possible values.</p>
+<p>So, the interference pattern on the detector is built up over time as more electrons arrive and are sampled by the detector.</p>
+</section>
+<section id="the-introduction-of-an-interaction-with-a-pointer" class="level3" data-number="1.14.2">
+<h3 data-number="1.14.2" class="anchored" data-anchor-id="the-introduction-of-an-interaction-with-a-pointer"><span class="header-section-number">1.14.2</span> The introduction of an interaction with a pointer</h3>
+<p>This section is adapted from <span class="citation" data-cites="bricmont2017">Bricmont (<a href="../references.html#ref-bricmont2017" role="doc-biblioref">2017</a>)</span>, Appendix 5.A and <span class="citation" data-cites="maudlin2019">Maudlin (<a href="../references.html#ref-maudlin2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>The experiment, illustrated in Figure (2), is now as follows:</p>
+<p>There is again a source of electrons that move towards a screen with two slits.<br>
+The intensity of the beam is low and only one electron is moving towards the detector at any time.<br>
+The slits are marked <span class="math inline">\(\delta_1\)</span> and <span class="math inline">\(\delta_2\)</span>.<br>
+<span class="math inline">\(\Delta\)</span> be some arbitrary region on the electron detector.</p>
+<p>A pointer <span class="math inline">\(P\)</span> is introduced. It is a quantum object with three states: neutral <span class="math inline">\(P_0\)</span>, points to slit <span class="math inline">\(1\)</span> (<span class="math inline">\(P_1\)</span>), and points to slit <span class="math inline">\(2\)</span> (<span class="math inline">\(P_2\)</span>). The interaction with the electron causes the pointer to move towards it.</p>
+<div id="fig-a2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-a2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./images/slits2.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-a2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: The setup for the double slit experiment with a pointer behind the slits is shown.
+</figcaption>
+</figure>
+</div>
+<p>Again let <span class="math inline">\(Y_1\)</span> and <span class="math inline">\(Y_2\)</span> be the projection operators for position in the regions of the two slits <span class="math inline">\(\delta_1\)</span> and <span class="math inline">\(\delta_2\)</span>. Then <span class="math inline">\(Y_1 + Y_2\)</span> is the projection of position for the union <span class="math inline">\(\delta_1 \cup \delta_2\)</span>. Let <span class="math inline">\(X\)</span> be the operator for position in a local region <span class="math inline">\(\Delta\)</span> on the detection screen. The operator representing the pointer has three eigenstates and therefore a three-dimensional Hilbert space <span class="math inline">\(\mathcal{H}_P\)</span>. Without the pointer the Hilbert space is <span class="math inline">\(\mathcal{H}_0\)</span>. The Hilbert space of the total system is <span class="math inline">\(\mathcal{H}_P \otimes \mathcal{H}_0\)</span>.</p>
+<p>The possible constituent states are:</p>
+<ul>
+<li><span class="math inline">\(\phi_1\)</span> pointer pointing to slit <span class="math inline">\(\delta_1\)</span><br>
+</li>
+<li><span class="math inline">\(\phi_2\)</span> pointer pointing to slit <span class="math inline">\(\delta_2\)</span><br>
+</li>
+<li><span class="math inline">\(\phi_0\)</span> pointer neutral<br>
+</li>
+<li><span class="math inline">\(\psi_1\)</span> electron through slit <span class="math inline">\(\delta_1\)</span><br>
+</li>
+<li><span class="math inline">\(\psi_2\)</span> electron through slit <span class="math inline">\(\delta_2\)</span><br>
+</li>
+<li><span class="math inline">\(\Psi_0\)</span> electron with pointer in neutral state <span class="math inline">\(P_0\)</span></li>
+</ul>
+<p>Assuming the pointer starts in its neutral state, the initial wave function is</p>
+<p><span class="math display">\[
+\Psi_0 = \phi_0 \otimes (\psi_1 + \psi_2) \]</span> <span class="math display">\[
+= \phi_0 \otimes \psi_1 + \phi_0 \otimes \psi_2
+\]</span></p>
+<hr>
+<section id="treatment-i-pointer-reacts-to-which-slit-the-electron-passes-through" class="level4" data-number="1.14.2.1">
+<h4 data-number="1.14.2.1" class="anchored" data-anchor-id="treatment-i-pointer-reacts-to-which-slit-the-electron-passes-through"><span class="header-section-number">1.14.2.1</span> Treatment I: Pointer reacts to which slit the electron passes through</h4>
+<p>Time evolution gives:</p>
+<p><span class="math display">\[
+\Psi = \phi_1 \otimes \psi_1 + \phi_2 \otimes \psi_2.
+\]</span></p>
+<p>The interference term becomes:</p>
+<p><span class="math display">\[
+p(X|Y_1+Y_2)_I = \frac{\mathrm{tr}(Y_1 \rho_\Psi Y_2 X)+\mathrm{tr}(Y_2 \rho_\Psi Y_1 X)}{\mathrm{tr}(\rho_\Psi (Y_1+Y_2))}
+\]</span></p>
+<p>Using orthogonality of pointer states:</p>
+<p><span class="math display">\[
+p(X|Y_1+Y_2)_I = 0
+\]</span></p>
+<p>Interference term disappears.</p>
+</section>
+<section id="treatment-ii-pointer-does-not-react-to-which-slit-the-electron-passes-through" class="level4" data-number="1.14.2.2">
+<h4 data-number="1.14.2.2" class="anchored" data-anchor-id="treatment-ii-pointer-does-not-react-to-which-slit-the-electron-passes-through"><span class="header-section-number">1.14.2.2</span> Treatment II: Pointer does <em>not</em> react to which slit the electron passes through</h4>
+<p>General evolution:</p>
+<p><span class="math display">\[
+\Psi = \sum_{i\in\{0,1,2\}} a_i \phi_i \otimes \psi_1
+      + \sum_{i\in\{0,1,2\}} b_i \phi_i \otimes \psi_2
+\]</span></p>
+<p>with</p>
+<p><span class="math display">\[
+a_0=b_0,\quad a_1=b_2,\quad a_2=b_1.
+\]</span></p>
+<p>The detection pattern is:</p>
+<p><span class="math display">\[
+(\Psi, P\otimes X\,\Psi)
+= \sum_i |a_i|^2 (\psi_1, X\psi_1)\]</span> <span class="math display">\[
++ \sum_i |a_i|^2 (\psi_2, X\psi_2)
++ \sum_i a_1^* a_2 (\psi_2, X\psi_1)
++ \sum_i a_2^* a_1 (\psi_1, X\psi_2)
+\]</span></p>
+<p>Let <span class="math inline">\(C=\sum_i |a_i|^2\)</span>:</p>
+<p><span class="math display">\[
+(\Psi, P\otimes X\,\Psi)
+= C\big[(\psi_1,X\psi_1)+(\psi_2,X\psi_2)\big]
++ \mathrm{Re}\{2 a_1^* a_2 (\psi_2, X\psi_1)\}.
+\]</span></p>
+<p>The interference term <span class="math inline">\(\mathrm{Re}\{2 a_1^* a_2 (\psi_2, X\psi_1)\}\)</span> is non-zero, so the interference pattern is present if an experiment is carrried out.</p>
+</section>
+</section>
+</section>
+<section id="critique-of-experimental-interpretation" class="level2" data-number="1.15">
+<h2 data-number="1.15" class="anchored" data-anchor-id="critique-of-experimental-interpretation"><span class="header-section-number">1.15</span> Critique of Experimental Interpretation</h2>
+<p>The results of the double slit experiment are often interpreted as showing that the electron is a wave that passes through both slits and interferes with itself. However, this interpretation is not supported by the formalism of quantum mechanics. The formalism only provides probabilities for the outcomes, and does not describe the behaviour of the electron between these outcomes. The analysis of the double slit experiment shows that the interference pattern arises from the conditional probabilities of the electron’s position given the slits, and that the presence of a pointer that interacts with the electron can eliminate this interference. This suggests that the electron does not have a definite path through the slits, but rather that its behaviour is influenced by the total experimental context. The discussion of the double slit experiments above is solely in terms of probabilities. That is, in terms of potential events. Standard quantum mechanics has no explanation of how to go from potential events to actual events. The theory provides probabilities for the outcomes of measurements, but does not describe the process by which these outcomes are realized. This deficiency remains in the probabilistic reconstruction of quantum mechanics. The theory provides a framework for understanding the relationships between different properties and their probabilities, but it does not provide a mechanism for the actualization of these properties in specific experimental contexts.</p>
+<p>In an experiment the results are recorded at the time of the experiment. This experimental recording is not part of the formal theory. The theory provides transition probabilities but nothing to time the transition. To address this, a more complete theory is needed that includes the dynamics of state reduction and the actualization of properties in specific contexts. The Relativistic Transactional Interpretation (<span class="citation" data-cites="kastner2022transactional">Kastner (<a href="../references.html#ref-kastner2022transactional" role="doc-biblioref">2022</a>)</span>) is one such candidate that aims to provide a mechanism for state reduction consistent with relativity, allowing for a more complete understanding of how potential events become actual events in quantum mechanics. This will be discussed in the next <a href="Bell-locality-and-PTI.html" class="quarto-xref"><span>Chapter 4</span></a> where the Relativistic Transactional Interpretation is presented in the generalised probabilistic form outlined in this chapter. This will address the difficulties inherent in standard quantum mechanics and its probabilistic reconstruction.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bohm2001quantum" class="csl-entry" role="listitem">
+Bohm, Arno. 2001. <em>Quantum Mechanics: Foundations and Applications</em>. 3rd ed. Textbooks in Mathematical Physics. Springer.
+</div>
+<div id="ref-bricmont2017" class="csl-entry" role="listitem">
+Bricmont, Jean. 2017. <em>Quantum Sense and Nonsense</em>. Springer Nature.
+</div>
+<div id="ref-Cramer1986" class="csl-entry" role="listitem">
+Cramer, J. 1986. <span>“The Transactional Interpretation of Quantum Mechanics.”</span> <em>Reviews of Modern Physics</em> 58: 647–87.
+</div>
+<div id="ref-grw1986" class="csl-entry" role="listitem">
+Ghirardi, G. C., A. Rimini, and T. Weber. 1986. <span>“<span class="nocase">Unified dynamics for microscopic and macroscopic systems</span>.”</span> <em>Physical Review D</em> 34 (2): 470–91.
+</div>
+<div id="ref-Gleason1957" class="csl-entry" role="listitem">
+Gleason, Andrew M. 1957. <span>“Measures on the Closed Subspaces of a Hilbert Space.”</span> <em>Journal of Mathematics and Mechanics</em> 6 (6): 885–93.
+</div>
+<div id="ref-hall2013" class="csl-entry" role="listitem">
+Hall, Brian C. 2013. <em>Quantum Theory for Mathematicians</em>. Springer.
+</div>
+<div id="ref-kastner2022transactional" class="csl-entry" role="listitem">
+Kastner, Ruth E. 2022. <em>The Transactional Interpretation of Quantum Mechanics: A Relativistic Treatment</em>. 2nd ed. Cambridge University Press.
+</div>
+<div id="ref-kochen2015reconstruction" class="csl-entry" role="listitem">
+Kochen, Simon. 2015. <span>“A Reconstruction of Quantum Mechanics.”</span> <em>arXiv Preprint arXiv:1506.02154</em>. <a href="https://arxiv.org/abs/1506.02154">https://arxiv.org/abs/1506.02154</a>.
+</div>
+<div id="ref-kolmogorov2018" class="csl-entry" role="listitem">
+Kolmogorov, Andrey Nikolaevich. 2018. <em>Foundations of the Theory of Probability</em>. Dover Publications.
+</div>
+<div id="ref-Luders1951" class="csl-entry" role="listitem">
+Lüders, Gerhardt. 1951. <span>“<span>Ü</span>ber Die Zustands<span>ä</span>nderung Durch Den Messprozess.”</span> <em>Annalen Der Physik</em> 443 (5–8): 322–28. <a href="https://doi.org/10.1002/andp.19514430510">https://doi.org/10.1002/andp.19514430510</a>.
+</div>
+<div id="ref-maudlin2019" class="csl-entry" role="listitem">
+Maudlin, Tim. 2019. <em><span class="nocase">Philosophy of Physics: Quantum Theory</span></em>. Princeton University Press.
+</div>
+<div id="ref-thirring1979course" class="csl-entry" role="listitem">
+Thirring, Walter. 1979. <em>A Course in Mathematical Physics 3: Quantum Mechanics of Atoms and Molecules</em>. Springer-Verlag.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>For abstract operators the space on which they operate is not specified.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/Locality_and_quantum_mechanics.html" class="pagination-link" aria-label="Locality, Microcausality, and Entanglement">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Locality, Microcausality, and Entanglement</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
