@@ -225,8 +225,14 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#virtual-photons" id="toc-virtual-photons" class="nav-link active" data-scroll-target="#virtual-photons"><span class="header-section-number">5.1</span> Virtual photons</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -250,17 +256,10 @@ window.Quarto = {
 </header>
 
 
-<p>A <em>real photon</em> in QFT is an on‑shell excitation of the electromagnetic field that can be detected, while a <em>virtual photon</em> is an off‑shell internal line in a perturbative calculation that never appears as an observable particle. That is the essential distinction.</p>
-<p>A <em>real photon</em> satisfies the physical dispersion relation <span class="math inline">\(E^2 = p^2 c^2\)</span> and can be emitted, absorbed, or counted. A <em>virtual photon</em> does not satisfy this relation; it is a mathematical intermediate in the perturbation expansion of the S‑matrix and cannot be directly observed. <a href="https://www.physicsforums.com/insights/what-are-virtual-particles-intro/">Physics Forums</a></p>
-<p>Real photons (on‑shell) are:</p>
-<ul>
-<li>Actual quanta of the electromagnetic field.<br>
-</li>
-<li>Appear in the <em>external legs</em> of Feynman diagrams.<br>
-</li>
-<li>Are <strong>detectable</strong>: you can measure their energy, momentum, polarization.</li>
-</ul>
-<p>Their key features are</p>
+<p>In PTQT the difference between real and virtual photons is explicitly defined by whether a complete, energy-conserving transaction is formed. Instead of treating both as different “types” of independent field excitations, PTQT views them as fundamentally distinct stages of relational interactions between charged particles.</p>
+<p>##Real photons</p>
+<p>A <em>real photon</em> in QFT is an on‑shell excitation of the electromagnetic field that can be detected, while a <em>virtual photon</em> is an off‑shell internal line in a perturbative calculation that never appears as an observable particle. A <em>real photon</em> satisfies the physical dispersion relation <span class="math inline">\(E^2 = p^2 c^2\)</span> and can be emitted, absorbed, or counted. A <em>virtual photon</em> does not satisfy this relation; it is a mathematical intermediate in the perturbation expansion of the S‑matrix and cannot be directly observed.</p>
+<p>Real photons (on‑shell) appear in the <em>external legs</em> of Feynman diagrams and are <em>detectable</em>: you can measure their energy, momentum, polarization. Their key features are</p>
 <ul>
 <li><em>On‑shell:</em> obey <span class="math inline">\(E^2 = p^2 c^2\)</span>.</li>
 <li><em>Long‑lived:</em> propagate freely.<br>
@@ -269,15 +268,17 @@ window.Quarto = {
 </li>
 <li><em>Create or annihilate excitations</em> in detectors or atoms.</li>
 </ul>
-<p>Real photons correspond to actual events — “something happened” in the experimental sense. <a href="https://link.springer.com/article/10.1140/epjs/s11734-021-00075-3">Springer</a></p>
-<p>Virtual photons (off‑shell) are</p>
+<p>Real photons correspond to actual events — “something happened” in the experimental sense.</p>
+<p>In PTQT a photon becomes “real” when an excited emitter successfully completes a “handshake” with a specific absorber rather than just a potential one.</p>
 <ul>
-<li>Internal lines in Feynman diagrams.<br>
+<li>The emitter state and the absorber states set up a set of possibilities.<br>
 </li>
-<li>Mathematical devices in the Dyson expansion of the S‑operator.<br>
-</li>
-<li>Never appear as asymptotic states.</li>
+<li>If and only if the conservation laws are perfectly satisfied between those two specific matter states, a non-unitary collapse occurs, which is a stochastic transition from the possible to the actual. The energy is transferred, and a real photon is actualised.</li>
+<li>While standard quantum physics defines a real photon as something that can theoretically travel infinitely through space without an absorber, in PTQT a real photon always has an absorber on the other end. It is bounded by its emission and absorption events.</li>
 </ul>
+<section id="virtual-photons" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="virtual-photons"><span class="header-section-number">5.1</span> Virtual photons</h2>
+<p>Virtual photons in QFT are internal lines in Feynman diagrams. They can be considered to be mathematical devices in the Dyson expansion of the S‑operator.</p>
 <p>Their key features are:</p>
 <ul>
 <li><em>Off‑shell:</em> do <em>not</em> satisfy <span class="math inline">\(E^2 = p^2 c^2\)</span>.<br>
@@ -288,7 +289,8 @@ window.Quarto = {
 </li>
 <li><em>Encode interactions:</em> they represent how charged particles influence each other.</li>
 </ul>
-<p>Virtual photons are not just part of the <em>dressing</em> of charged particles, where in standard quantum field theory they appear as aspects of the calaculation. In PTQT they make the transaction.</p>
+<p>Virtual photons are not just part of the <em>dressing</em> of charged particles, where in standard quantum field theory they appear as aspects of the calculation, in PTQT they enable the transaction.</p>
+<p>The table below summarises the key differences between real and virtual photons in standard quantum field theory:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 21%">
@@ -320,7 +322,7 @@ window.Quarto = {
 </tr>
 <tr class="even">
 <td><em>Energy–momentum relation</em></td>
-<td>Satisfies (E^2 = p^2 c^2)</td>
+<td>Satisfies <span class="math inline">\(E^2 = p^2 c^2\)</span></td>
 <td>Violates it</td>
 </tr>
 <tr class="odd">
@@ -340,37 +342,32 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>Why the distinction matters</p>
-<ul>
-<li><em>Only real photons</em> correspond to measurable radiation.</li>
-<li><em>Virtual photons</em> are indispensable in calculations but their physical existence is in the quantum substratum.</li>
-<li>Confusing the two leads to misconceptions like “vacuum is full of particles popping in and out of existence.” In QFT, virtual particles are <em>terms in an integral</em>, not literal transient objects, but in PTQT they are essential for completing the transaction.</li>
-</ul>
-<p>A photon in the substratum completes the transaction between the ES and the set of possible AS’s.</p>
+<p>Only real photons correspond to measurable radiation and virtual photons are indispensable in calculations but their physical existence is in the quantum substratum. Confusing the two leads to misconceptions like “vacuum is full of particles popping in and out of existence.” In QFT, virtual particles are <em>terms in an integral</em>, not literal transient objects, but in PTQT they are essential for completing the transaction.</p>
+<p>A virtual photon in the substratum enables the transaction between the Emitter States and the set of possible Absorber States. It does not select the specific absorber but does select a specific <span class="math inline">\(\sigma\)</span>-algebra of possible absorbers. The selection of a specific absorber is a stochastic transition.</p>
 <p>Ontological status of the virtual photon in the quantum substratum (PTQT):</p>
 <ul>
 <li>It is not a particle and not a spacetime object.<br>
 </li>
-<li>It completes the transaction between the emitter and the selected absorber.</li>
+<li>It enables the transaction between the emitter and the selected absorber.</li>
 <li>It exists only in the quantum substratum, which is <em>not</em> spacetime and has no metric, no geometry, no trajectories.</li>
 </ul>
-<p>Ontological statusof the real photon in spacetime (PTQT):</p>
+<p>Ontological status of the real photon in spacetime (PTQT):</p>
 <ul>
-<li><p>It is the actualised transfer of conserved quantities (energy–momentum).<br>
-</p></li>
-<li><p>It is a spacetime connection between an emission event and an absorption event.<br>
-</p></li>
-<li><p>It is a causal-set link in the emergent spacetime structure.</p></li>
-<li><p>Key properties:</p>
+<li>It is the actualised transfer of conserved quantities (energy–momentum).<br>
+</li>
+<li>It is a spacetime connection between an emission event and an absorption event.<br>
+</li>
+<li>Key properties:
 <ul>
 <li>Exists only after a transaction (NU‑process).<br>
 </li>
 <li>Defines spacetime events — absorption events become actual spacetime nodes.</li>
 <li>Carries energy–momentum — unlike the transaction photon.<br>
 </li>
-<li>Has a spacetime trajectory (null geodesic) <em>only after</em> spacetime exists.</li>
+<li>Has a spacetime trajectory (null geodesic) <em>only once</em> spacetime exists.</li>
 </ul></li>
 </ul>
+<p>In summary photons in PTQT have the following features:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 13%">
@@ -387,7 +384,7 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td>Ontological status</td>
-<td>Possibility (ES)</td>
+<td>Possibility</td>
 <td>Actualised energy transfer</td>
 </tr>
 <tr class="even">
@@ -402,18 +399,19 @@ window.Quarto = {
 </tr>
 <tr class="even">
 <td>Time structure</td>
-<td>Time-symmetric proto‑time</td>
+<td>Time-symmetric process time (pre-spacetime)</td>
 <td>Time-asymmetric spacetime time</td>
 </tr>
 <tr class="odd">
 <td>Role</td>
-<td>Defines potential interactions</td>
-<td>Creates spacetime structure</td>
+<td>Enables potential interactions</td>
+<td>Makes spacetime structure</td>
 </tr>
 </tbody>
 </table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
